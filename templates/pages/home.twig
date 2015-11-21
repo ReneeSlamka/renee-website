@@ -1,5 +1,33 @@
 {% extends 'layout.twig' %}
 
+{% block title %}Renee Slamka{% endblock %}
+
 {% block content %}
-    THIS IS THE HOME PAGE
+    <div class="container">
+        <div class="row">
+            <div class="col-md-5">
+                <div class="row">
+                    <!--text-->
+                    <h2>Salut!</h2>
+                    <p>
+                        I'm <span>Renee Slamka</span> a third year
+                        computer engineering student at the University
+                        of British Columbia.
+                    </p>
+                    <p>
+                        I love all things Star Wars, and hope to one day
+                        work in the gaming industry.
+                    </p>
+                </div>
+                <div class="row">
+                    <!--butterfly-->
+                    <img src="/assets/img/butterfly.png"/>
+                </div>
+            </div>
+            <div class="col-md-7">
+                <!--pensive image w/ thought bubble -->
+                <img src="/assets/img/pensive.png"/>
+            </div>
+        </div>
+    </div>
 {% endblock %}
