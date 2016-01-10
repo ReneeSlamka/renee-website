@@ -1,5 +1,5 @@
 #homepage-section-1-bg-container{
-    background-image: url("/assets/img/scenic-4-cut.jpg");
+    background-image: url("/assets/img/scenic-4-edit-2.png");
     background-repeat: no-repeat;
     background-position: 0% 25%;
     height: 70vh;
@@ -22,10 +22,22 @@
 }
 
 .home-text-content p {
-    font-size: 20px;
+    font-size: 18px;
 }
 
 #homepage-section-2-bg-container {
     background-color: rgba(255,255,255,1);
-    margin-top: 20px;
+    margin-top: 70px;
+    margin-bottom: 100px;
 }
+
+#homepage-section-2-bg-container header {
+    font-size: 40px;
+    margin-bottom: 60px;
+}
+
+/*---Styling for carousel---*/
+.carousel-control.left, .carousel-control.right {
+    background-image: none;
+}
+

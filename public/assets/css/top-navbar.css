@@ -1,9 +1,11 @@
 .top-navbar-container {
     background: linear-gradient(0deg, #000000, #000000, #222222);
+    background-color: rgba(0,0,0,0.9);
 }
 
 .black-base-container {
     height: 100px;
+    background-image: url("/assets/img/marble.png");
 }
 
 #name-logo {
