@@ -1,0 +1,31 @@
+#homepage-section-1-bg-container{
+    background-image: url("/assets/img/scenic-4-cut.jpg");
+    background-repeat: no-repeat;
+    background-position: 0% 25%;
+    height: 70vh;
+    background-size: cover;
+    box-shadow: 0px 7px 10px rgba(0,0,0,0.4);
+    margin-left: -5px;
+    margin-right: -5px;
+}
+
+.home-text-content {
+    margin-left: 25%;
+    margin-right: 10%;
+    margin-top: 20%;
+    color: rgba(30,20,20,0.70);
+}
+
+.home-text-content header {
+    font-size: 40px;
+    margin-bottom: 10px;
+}
+
+.home-text-content p {
+    font-size: 20px;
+}
+
+#homepage-section-2-bg-container {
+    background-color: rgba(255,255,255,1);
+    margin-top: 20px;
+}

@@ -30,6 +30,7 @@ if (php_sapi_name() != 'cli-server') {
 if (strpos($_SERVER['SCRIPT_NAME'], '.css')) return false;
 if (strpos($_SERVER['SCRIPT_NAME'], '.js')) return false;
 if (strpos($_SERVER['SCRIPT_NAME'], '.png')) return false;
+if (strpos($_SERVER['SCRIPT_NAME'], '.jpg')) return false;
 
 $app->get('/', function () use ($app) {
 

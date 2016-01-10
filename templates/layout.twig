@@ -12,11 +12,15 @@
                 crossorigin="anonymous"></script>
         <link rel="stylesheet" href="/assets/css/top-navbar.css" />
         <link rel="stylesheet" href="/assets/css/bottom-navbar.css" />
+        <link rel="stylesheet" href="/assets/css/site-wide.css" />
+        <link href='https://fonts.googleapis.com/css?family=Lato:400,300' rel='stylesheet' type='text/css'>
+        <link href='https://fonts.googleapis.com/css?family=Fjalla+One' rel='stylesheet' type='text/css'>
+        <link href='https://fonts.googleapis.com/css?family=PT+Sans+Narrow:400,700' rel='stylesheet' type='text/css'>
 
         {% block css %}
         {% endblock %}
     </head>
-    <body>
+    <body id="renee-site">
     {%  include 'top-navbar.twig' %}
 
         {% block content %}

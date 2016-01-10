@@ -2,32 +2,44 @@
 
 {% block title %}Renee Slamka{% endblock %}
 
+{% block css %}
+<link rel="stylesheet" href="/assets/css/home.css" />
+<link rel="stylesheet" href="/assets/css/home-carousel.css" />
+{% endblock %}
+
+{% block js %}
+<script src="/assets/js/home-carousel.js"></script>
+{% endblock %}
+
 {% block content %}
-    <div class="container">
-        <div class="row">
-            <div class="col-md-5">
-                <div class="row">
-                    <!--text-->
-                    <h2>Salut!</h2>
-                    <p>
-                        I'm <span>Renee Slamka</span> a third year
-                        computer engineering student at the University
-                        of British Columbia.
-                    </p>
-                    <p>
-                        I love all things Star Wars, and hope to one day
-                        work in the gaming industry.
-                    </p>
-                </div>
-                <div class="row">
-                    <!--butterfly-->
-                    <img src="/assets/img/butterfly.png"/>
+    <div id="homepage-section-1-bg-container">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-5">
+                    <section class="home-text-content">
+                        <!--text-->
+                        <header>Salut!</header>
+                        <p>
+                            I'm <span>Renee Slamka</span>, a third year
+                            computer engineering student at the University
+                            of British Columbia.
+                        </p>
+                        <p>
+                            Welcome to my page! This site is a by product of my
+                            fascination with learning about the building blocks of
+                            the internet, and I hope to use it as an online blog and
+                            resume of sorts in the future. Because why use Tumblr when
+                            can build your own?
+                        </p>
+                    </section>
                 </div>
             </div>
-            <div class="col-md-7">
-                <!--pensive image w/ thought bubble -->
-                <img src="/assets/img/pensive.png"/>
-            </div>
+        </div>
+    </div>
+    <div id="homepage-section-2-bg-container">
+        <div class="container">
+            <h1 class="text-center">My Recent Projects</h1>
+            {%  include 'home-carousel.twig' %}
         </div>
     </div>
 {% endblock %}
