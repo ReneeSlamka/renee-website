@@ -33,9 +33,27 @@ if (strpos($_SERVER['SCRIPT_NAME'], '.png')) return false;
 if (strpos($_SERVER['SCRIPT_NAME'], '.jpg')) return false;
 
 $app->get('/', function () use ($app) {
-
     $app->render('/pages/home.twig');
 });
 
+$app->get('/about', function () use ($app) {
+    $app->render('/pages/about.twig');
+});
+
+$app->get('/resume', function () use ($app) {
+    $app->render('/pages/resume.twig');
+});
+
+$app->get('/projects', function () use ($app) {
+    $app->render('/pages/projects.twig');
+});
+
+$app->get('/art-portfolio', function () use ($app) {
+    $app->render('/pages/art-portfolio.twig');
+});
+
+$app->get('/contact', function () use ($app) {
+    $app->render('/pages/contact.twig');
+});
 
 $app->run();
