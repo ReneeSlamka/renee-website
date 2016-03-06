@@ -1,6 +1,6 @@
 <?php
 
-require __DIR__ .'/vendor/autoload.php';
+require (__DIR__ .'/vendor/autoload.php');
 
 $app = new \Slim\Slim();
 
@@ -16,14 +16,6 @@ $app->view->parserOptions = array(
 );
 
 $app->view->parserExtensions = array(new \Slim\Views\TwigExtension());
-
-
-// This file is ONLY used by the PHP built-in web server. It MUST be named index.php.
-// Don't rename it or use it in production.
-
-if (php_sapi_name() != 'cli-server') {
-    die ('index.php is only for use with the built-in PHP web server.');
-}
 
 // Return false for any URIs that should be handled as static files so the PHP server will serve them.
 // Don't ask too many questions about this little hack.
