@@ -1,0 +1,90 @@
+.project-background-container {
+
+}
+
+/*Styling for topmost panel*/
+
+.project-panel-1 {
+    padding-top: 80px;
+    padding-bottom: 70px;
+}
+
+.project-details {
+    display: flex;
+    flex-direction: column;
+
+}
+
+.project-image {
+    padding-left: 80px;
+    padding-right: 80px;
+}
+
+.project-title {
+    font-size: 48px;
+}
+
+.project-header-info p {
+    display: inline-block;
+    margin-top: 10px;
+}
+
+.project-type {
+    float: left;
+}
+
+.project-date {
+    float: right;
+    margin-right: 50px;
+}
+
+.project-summary {
+    margin-top: 15px;
+    font-size: 20px;
+}
+
+.project-links {
+    margin-top: 20px;
+}
+
+.project-links a {
+    display: block;
+    margin-bottom: 10px;
+}
+
+
+/*Styling for second panel*/
+
+.project-panel-2 {
+    padding-top: 50px;
+    padding-bottom: 70px;
+    background-color: #cccccc;
+}
+
+.project-description {
+    font-size: 20px;
+}
+
+.project-description h1 {
+    margin-bottom: 50px;
+}
+
+
+/*Styling for third panel*/
+
+.project-panel-3 {
+    padding-top: 50px;
+    margin-bottom: 70px;
+}
+
+.project-skills-gained h1 {
+    margin-bottom: 50px;
+}
+
+
+/*General styling*/
+
+.project-page-col {
+    padding-left: 80px;
+    padding-right: 80px;
+}
