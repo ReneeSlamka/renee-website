@@ -1,23 +1,65 @@
 {% extends 'layout.twig' %}
 
-
 {% block content %}
     <div class="project-background-container">
-        <div class="container">
-            <div class="row">
-                <div class="col-md-6">
-                    <header>
-                        {% block projectTitle %}
+        <div class="project-panel-1">
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-6 project-details project-page-col">
+                        <header class="project-title">
+                            {% block projectTitle %}
+                            {% endblock %}
+                        </header>
+                        <section class="project-header-info">
+                            <p class="project-type">
+                                {% block projectType %}
+                                {% endblock %}
+                            </p>
+                            <p class="project-date">
+                                {% block projectDate %}
+                                {% endblock %}
+                            </p>
+                        </section>
+                        <section class="project-summary">
+                            {% block projectSummary %}
+                            {% endblock %}
+                        </section>
+                        <section class="project-links">
+                            {% block projectLinks %}
+                            {% endblock %}
+                        </section>
+                    </div>
+                    <div class="col-md-6 project-image project-page-col">
+                        {% block projectImage %}
                         {% endblock %}
-                    </header>
-                    <p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="project-panel-2">
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-6 project-page-col">
+                        <h1>Technology Stack</h1>
+                        {% block projectTechnologyStack%}
+                        {% endblock %}
+                    </div>
+                    <div class="col-md-6 project-description project-page-col">
+                        <h1>Description</h1>
                         {% block projectDescription %}
                         {% endblock %}
-                    </p>
+                    </div>
                 </div>
-                <div class="col-md-6">
-                    {% block projectImage %}
-                    {% endblock %}
+            </div>
+        </div>
+        <div class="project-panel-3">
+            <div class="container">
+                <div class="row project-skills-gained">
+                    <div class="col-md-8 col-md-offset-2">
+                        <h1>Skills Gained</h1>
+                        {% block projectSkills %}
+                        {% endblock %}
+                    </div>
                 </div>
             </div>
         </div>
