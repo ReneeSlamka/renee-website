@@ -1,1 +1,40 @@
 {% extends 'layout.twig' %}
+
+{% block css %}
+    <link rel="stylesheet" href="/assets/css/contact.css" />
+{% endblock %}
+
+{% block content %}
+    <div class="contact-panel-1">
+        <div class="contact-bg-white-overlay">
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-6 contact-info-section">
+                        <h1>Contact Me</h1>
+                        <p>
+                            Have a project or job opportunity you think I might be interested in?
+                            Or maybe you'd like to talk about Star Wars and how awesome it would be if the Force
+                            existed? Shoot me an email!
+                        </p>
+                        <p id="contact-info-sidenote">
+                            PS. I'm always looking to
+                            practice my French and Italian, so if you happen to speak one or both of
+                            those languages, feel free to message me in either. Merci!
+                        </p>
+                        <form id="contact-form">
+                            <label>Name:</label><br>
+                            <input type="text" name="name" size="40" placeholder="Luke Skywalker"><br>
+                            <label>Email:</label><br>
+                            <input type="text" name="email" size="40" placeholder="lskywalker@therepublic.com"><br>
+                            <label>Message:</label><br>
+                            <textarea rows="4" cols="50" placeholder="Once upon a time, in a galaxy far, far away... "></textarea>
+                        </form>
+                    </div>
+                    <div class="col-md-6">
+
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+{% endblock %}

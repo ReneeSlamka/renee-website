@@ -1,0 +1,54 @@
+.contact-panel-1 {
+    background-image: url("/assets/img/contact-bg-img-edited-copy.jpg");
+    background-position: 120% 0%;
+    background-repeat: no-repeat;
+}
+
+.contact-bg-white-overlay {
+    /*background-color: rgba(255,255,255,0.3);*/
+    background: linear-gradient(to right,
+    rgba(255,255,255,1),
+    rgba(255,255,255,1),
+    rgba(255,255,255,0.85),
+    rgba(255,255,255,0.7),
+    rgba(255,255,255,0.5),
+    rgba(255,255,255,0.3),
+    rgba(255,255,255,0.2));
+    padding-top: 70px;
+    padding-bottom: 110px;
+}
+
+.contact-info-section {
+    padding-left: 80px;
+    padding-right: 80px;
+    font-size: 18px;
+}
+
+.contact-info-section h1 {
+    margin-bottom: 30px;
+    font-size: 40px;
+}
+
+.contact-info-section input, .contact-info-section textarea {
+    background-color: rgba(255,255,255,0.3);
+    border-width: 1px;
+    border-style: solid;
+    border-color: #cccccc;
+    border-radius: 3px;
+    font-size: 16px;
+    padding-left: 8px;
+}
+
+#contact-info-sidenote {
+    font-size: 16px;
+    margin-top: 30px;
+}
+
+#contact-form {
+    margin-top: 30px;
+    margin-bottom: 30px;
+}
+
+#contact-form input {
+    margin-bottom: 20px;
+}
