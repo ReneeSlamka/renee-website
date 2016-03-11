@@ -1,0 +1,35 @@
+.about-panel-1 {
+    padding-top: 50px;
+    box-shadow: 0px 7px 10px rgba(0,0,0,0.4);
+}
+
+.intro-section {
+    padding-left: 80px;
+    padding-right: 80px;
+    padding-top: 20px;
+    font-size: 20px;
+}
+
+.intro-section h1 {
+    margin-bottom: 30px;
+    font-size: 60px;
+}
+
+.about-portrait {
+    width: 600px;
+}
+
+
+
+.about-panel-2 {
+    background-color: #f4f4f4;
+}
+
+
+.about-panel-3 {
+
+}
+
+.about-panel-4 {
+    background-color: #f4f4f4;
+}
