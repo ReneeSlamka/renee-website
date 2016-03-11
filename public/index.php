@@ -26,6 +26,7 @@ if (strpos($_SERVER['SCRIPT_NAME'], '.jpg')) return false;
 if (strpos($_SERVER['SCRIPT_NAME'], '.JPG')) return false;
 if (strpos($_SERVER['SCRIPT_NAME'], '.otf')) return false;
 if (strpos($_SERVER['SCRIPT_NAME'], '.ttf')) return false;
+if (strpos($_SERVER['SCRIPT_NAME'], '.pdf')) return false;
 
 $app->get('/', function () use ($app) {
     $app->render('/pages/home.twig');
