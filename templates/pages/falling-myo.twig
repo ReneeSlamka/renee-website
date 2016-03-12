@@ -1,6 +1,6 @@
 {% extends 'project-page-layout.twig' %}
 
-{% block title %}Northwest Hacks - The Falling Myo{% endblock %}
+{% block title %}Northwest Hacks - Smart Fall Detector{% endblock %}
 
 {% block css %}
     <link rel="stylesheet" href="/assets/css/project-page-layout.css"/>
@@ -8,7 +8,7 @@
 {% endblock %}
 
 {% block projectTitle %}
-    Northwest Hacks - The Falling Myo
+    Smart Fall Detector
 {% endblock %}
 
 {% block projectType %}
@@ -26,6 +26,13 @@
 
 {% block projectLinks %}
     <a href="https://github.com/ReneeSlamka">Source code</a>
+{% endblock %}
+
+{% block projectLanguages%}
+    <p>Java, JavaScript</p>
+{% endblock %}
+{% block projectTechStack%}
+    <p>Myo Armband, Android SDK, Myo Android Library, Firebase, Bootstrap</p>
 {% endblock %}
 
 {% block projectImage %}
@@ -47,7 +54,20 @@
 {% endblock %}
 
 {% block projectSkills %}
-    <img src="/assets/img/sample-badge.png">
-    <img src="/assets/img/sample-badge.png">
-    <img src="/assets/img/sample-badge.png">
+    <div class="smart-fall-detector-skill-badge">
+        <img class="square-badge" src="/assets/img/icons/web-dev-badge.png">
+        <footer>Front End Development</footer>
+    </div>
+    <div class="smart-fall-detector-skill-badge">
+        <img class="square-badge" src="/assets/img/icons/git-badge.png">
+        <footer>Source Control - Git</footer>
+    </div>
+    <div class="smart-fall-detector-skill-badge">
+        <img class="hex-badge" src="/assets/img/icons/android-badge.png">
+        <footer>Android Development</footer>
+    </div>
+    <div class="smart-fall-detector-skill-badge">
+        <img class="square-badge" src="/assets/img/icons/ux-badge.png">
+        <footer>UI Design</footer>
+    </div>
 {% endblock %}

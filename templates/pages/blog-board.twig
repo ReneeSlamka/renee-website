@@ -29,6 +29,13 @@
     <a href="https://github.com/ReneeSlamka/BlogBoard">Source code</a>
 {% endblock %}
 
+{% block projectLanguages%}
+    <p>Java, JavaScript</p>
+{% endblock %}
+{% block projectTechStack%}
+    <p>Spring, Bootstrap, Pebble, Tomcat, HSQLDB</p>
+{% endblock %}
+
 {% block projectImage %}
     <img id="blog-board-individual-img" src="/assets/img/blog-board-img.jpg">
 {% endblock %}
@@ -48,7 +55,24 @@
 {% endblock %}
 
 {% block projectSkills %}
-    <img src="/assets/img/sample-badge.png">
-    <img src="/assets/img/sample-badge.png">
-    <img src="/assets/img/sample-badge.png">
+    <div class="blog-board-skill-badge">
+        <img class="square-badge" src="/assets/img/icons/web-dev-badge.png">
+        <footer>Front End Development</footer>
+    </div>
+    <div class="blog-board-skill-badge">
+        <img class="hex-badge" src="/assets/img/icons/db-badge.png">
+        <footer>Databases</footer>
+    </div>
+    <div class="blog-board-skill-badge">
+        <img class="square-badge" src="/assets/img/icons/git-badge.png">
+        <footer>Source Control - Git</footer>
+    </div>
+    <div class="blog-board-skill-badge">
+        <img class="hex-badge" src="/assets/img/icons/back-end-dev-badge.png">
+        <footer>Back End Development</footer>
+    </div>
+    <div class="blog-board-skill-badge">
+        <img class="square-badge" src="/assets/img/icons/ux-badge.png">
+        <footer>UI Design</footer>
+    </div>
 {% endblock %}
