@@ -10,6 +10,7 @@
                             {% block projectTitle %}
                             {% endblock %}
                         </header>
+                        <hr>
                         <section class="project-header-info">
                             <p class="project-type">
                                 {% block projectType %}
@@ -28,6 +29,18 @@
                             {% block projectLinks %}
                             {% endblock %}
                         </section>
+                        <section class="tech-stack">
+                            <section class="dev-tool-list">
+                                <span>Languages:</span>
+                                {% block projectLanguages%}
+                                {% endblock %}
+                            </section>
+                            <section class="dev-tool-list">
+                                <span>Tech Stack:</span>
+                                    {% block projectTechStack%}
+                                    {% endblock %}
+                            </section>
+                        </section>
                     </div>
                     <div class="col-md-6 project-image project-page-col">
                         {% block projectImage %}
@@ -39,15 +52,12 @@
         <div class="project-panel-2">
             <div class="container">
                 <div class="row">
-                    <div class="col-md-5 project-page-col">
-                        <h1>Technology Stack</h1>
-                        {% block projectTechnologyStack%}
-                        {% endblock %}
-                    </div>
-                    <div class="col-md-7 project-description project-page-col">
+                    <div class="col-md-10 col-md-offset-1 project-description">
                         <h1>Description</h1>
-                        {% block projectDescription %}
-                        {% endblock %}
+                        <p>
+                            {% block projectDescription %}
+                            {% endblock %}
+                        </p>
                     </div>
                 </div>
             </div>
@@ -55,8 +65,8 @@
         <div class="project-panel-3">
             <div class="container">
                 <div class="row project-skills-gained">
-                    <div class="col-md-8 col-md-offset-2">
-                        <h1>Skills Gained</h1>
+                    <div class="col-md-10 col-md-offset-1 text-center">
+                        <h1>Skills Acquired</h1>
                         {% block projectSkills %}
                         {% endblock %}
                     </div>
