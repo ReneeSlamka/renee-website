@@ -23,8 +23,23 @@
 
 .about-panel-2 {
     background-color: #f4f4f4;
+    padding-top: 170px;
+    padding-bottom: 170px;
 }
 
+.renee-attribute-section * {
+    display: inline-block;
+    margin-left: 8px;
+    margin-right: 8px;
+}
+
+.renee-attribute-section h2 {
+    font-size: 60px;
+}
+
+.attribute-set-img {
+    width: 170px;
+}
 
 .about-panel-3 {
 
@@ -32,4 +47,10 @@
 
 .about-panel-4 {
     background-color: #f4f4f4;
+    padding-top: 70px;
+    padding-bottom: 100px;
+}
+
+#float-plane-ride {
+    width: 400px;
 }
