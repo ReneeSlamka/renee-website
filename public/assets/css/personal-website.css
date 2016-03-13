@@ -1,10 +1,10 @@
-.smart-fall-detector-skill-badge {
+.personal-website-skill-badge {
     display: inline-block;
     margin-left: 10px;
     margin-right: 10px;
 }
 
-.smart-fall-detector-skill-badge footer {
+.personal-website-skill-badge footer {
     font-size: 18px;
     margin-top: 8px;
 }
@@ -17,6 +17,15 @@
     width: 180px;
 }
 
-#smart-fall-detector-img {
+#personal-website-img {
     width: 600px;
+}
+
+
+#first-site-mockup-img {
+    width: 800px;
+}
+
+#eyes-closed-img {
+    width: 800px;
 }

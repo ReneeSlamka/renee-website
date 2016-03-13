@@ -6,13 +6,12 @@
 
 .project-panel-1 {
     padding-top: 80px;
-    padding-bottom: 70px;
+    padding-bottom: 90px;
 }
 
 .project-details {
     display: flex;
     flex-direction: column;
-
 }
 
 .project-image {
@@ -24,9 +23,21 @@
     font-size: 48px;
 }
 
+hr {
+    border: 0px;
+    margin-top: 5px;
+    clear: both;
+    display: block;
+    width: 94%;
+    background-color: rgba(0,0,0,0.5);
+    height: 1px;
+    text-align: left;
+    margin-left: 0px;
+}
+
 .project-header-info p {
     display: inline-block;
-    margin-top: 10px;
+    margin-top: 0;
 }
 
 .project-type {
@@ -47,17 +58,34 @@
     margin-top: 20px;
 }
 
-.project-links a {
+.project-links h5 {
     display: block;
     margin-bottom: 10px;
+}
+
+.tech-stack {
+    margin-top: 40px;
+}
+
+.tech-stack span {
+    font-weight: bold;
+    font-size: 16px;
+    margin-right: 5px;
+}
+.dev-tool-list p {
+    font-weight: 400;
+}
+
+.dev-tool-list p {
+    display: inline-block;
 }
 
 
 /*Styling for second panel*/
 
 .project-panel-2 {
-    padding-top: 50px;
-    padding-bottom: 70px;
+    padding-top: 60px;
+    padding-bottom: 90px;
     background-color: #f4f4f4;
 }
 
@@ -73,8 +101,8 @@
 /*Styling for third panel*/
 
 .project-panel-3 {
-    padding-top: 50px;
-    margin-bottom: 70px;
+    padding-top: 60px;
+    margin-bottom: 120px;
 }
 
 .project-skills-gained h1 {

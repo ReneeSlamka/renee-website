@@ -1,3 +1,22 @@
 #blog-board-individual-img {
     width: 400px;
 }
+
+.blog-board-skill-badge {
+    display: inline-block;
+    margin-left: 10px;
+    margin-right: 10px;
+}
+
+.blog-board-skill-badge footer {
+    font-size: 18px;
+    margin-top: 8px;
+}
+
+.square-badge {
+    width: 150px;
+}
+
+.hex-badge {
+    width: 180px;
+}

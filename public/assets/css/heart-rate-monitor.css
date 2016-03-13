@@ -1,3 +1,22 @@
+.heart-rate-monitor-skill-badge {
+    display: inline-block;
+    margin-left: 10px;
+    margin-right: 10px;
+}
+
+.heart-rate-monitor-skill-badge footer {
+    font-size: 18px;
+    margin-top: 8px;
+}
+
+.square-badge {
+    width: 150px;
+}
+
+.hex-badge {
+    width: 180px;
+}
+
 #heart-monitor-individual-img {
-    width: 400px;
+    width: 600px;
 }

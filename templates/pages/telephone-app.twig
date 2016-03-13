@@ -27,29 +27,35 @@
 {% endblock %}
 
 {% block projectLinks %}
-    <a href="https://github.com/ReneeSlamka">Source code</a>
+{% endblock %}
+
+{% block projectLanguages%}
+    <p>Java, C, VHDL</p>
+{% endblock %}
+{% block projectTechStack%}
+    <p>Android SDK, Android Studio, Eclipse, DE2 Board</p>
 {% endblock %}
 
 {% block projectImage %}
-    <img id="blog-board-individual-img" src="/assets/img/blog-board-img.jpg">
+    <img id="telephone-app-img" src="/assets/img/project-page-pics/telephone-app-screenshot.jpg">
 {% endblock %}
 
 
 {% block projectDescription %}
-    Bkfjsdjflsd Bkfjsdjflsd Bkfjsdjflsd Bkfjsdjflsd Bkfjsdjflsd Bkfjsdjflsd
-    Bkfjsdjflsd Bkfjsdjflsd Bkfjsdjflsd Bkfjsdjflsd Bkfjsdjflsd Bkfjsdjflsd
-    Bkfjsdjflsd Bkfjsdjflsd Bkfjsdjflsd Bkfjsdjflsd Bkfjsdjflsd Bkfjsdjflsd
-    Bkfjsdjflsd Bkfjsdjflsd Bkfjsdjflsd Bkfjsdjflsd Bkfjsdjflsd Bkfjsdjflsd
-    Bkfjsdjflsd Bkfjsdjflsd Bkfjsdjflsd Bkfjsdjflsd Bkfjsdjflsd Bkfjsdjflsd
-    Bkfjsdjflsd Bkfjsdjflsd Bkfjsdjflsd Bkfjsdjflsd Bkfjsdjflsd Bkfjsdjflsd
-    Bkfjsdjflsd Bkfjsdjflsd Bkfjsdjflsd Bkfjsdjflsd Bkfjsdjflsd Bkfjsdjflsd
-    Bkfjsdjflsd Bkfjsdjflsd Bkfjsdjflsd Bkfjsdjflsd Bkfjsdjflsd Bkfjsdjflsd
-    Bkfjsdjflsd Bkfjsdjflsd Bkfjsdjflsd Bkfjsdjflsd Bkfjsdjflsd Bkfjsdjflsd
-    Bkfjsdjflsd Bkfjsdjflsd Bkfjsdjflsd Bkfjsdjflsd Bkfjsdjflsd Bkfjsdjflsd
+    Coming soon!
 {% endblock %}
 
 {% block projectSkills %}
-    <img src="/assets/img/sample-badge.png">
-    <img src="/assets/img/sample-badge.png">
-    <img src="/assets/img/sample-badge.png">
+    <div class="telephone-app-skill-badge">
+        <img class="square-badge" src="/assets/img/icons/git-badge.png">
+        <footer>Source Control - Git</footer>
+    </div>
+    <div class="telephone-app-skill-badge">
+        <img class="hex-badge" src="/assets/img/icons/android-badge.png">
+        <footer>Android Development</footer>
+    </div>
+    <div class="telephone-app-skill-badge">
+        <img class="square-badge" src="/assets/img/icons/ux-badge.png">
+        <footer>UI Design</footer>
+    </div>
 {% endblock %}
