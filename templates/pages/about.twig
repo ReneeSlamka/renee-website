@@ -1,5 +1,7 @@
 {% extends 'layout.twig' %}
 
+{% block title %}Ren&eacutee Slamka | About{% endblock %}
+
 {% block css %}
     <link rel="stylesheet" href="/assets/css/about.css" />
 {% endblock %}
@@ -41,35 +43,35 @@
     </div>
     <div class="about-panel-3">
         <div class="container">
-            <h2>Skill Set</h2>
+            <h2 class="text-center">Skill Set</h2>
             <div class="skill-set-section">
                 <div class="about-skill-badge">
                     <img class="square-badge" src="/assets/img/icons/web-dev-badge.png">
-                    <footer>Front End Development</footer>
+                    <footer class="text-center">Front End Development</footer>
                 </div>
                 <div class="about-skill-badge">
                     <img class="hex-badge" src="/assets/img/icons/db-badge.png">
-                    <footer>Databases</footer>
+                    <footer class="text-center">Databases</footer>
                 </div>
                 <div class="about-skill-badge">
-                    <img class="square-badge" src="/assets/img/icons/git-badge.png">
-                    <footer>Source Control - Git</footer>
+                    <img class="square-badge" id="git-badge" src="/assets/img/icons/git-badge.png">
+                    <footer class="text-center">Source Control - Git</footer>
                 </div>
                 <div class="about-skill-badge">
                     <img class="hex-badge" src="/assets/img/icons/back-end-dev-badge.png">
-                    <footer>Back End Development</footer>
+                    <footer class="text-center">Back End Development</footer>
                 </div>
                 <div class="about-skill-badge">
                     <img class="square-badge" src="/assets/img/icons/ux-badge.png">
-                    <footer>UI Design</footer>
+                    <footer class="text-center">UI Design</footer>
                 </div>
                 <div class="about-skill-badge">
                     <img class="hex-badge" src="/assets/img/icons/android-badge.png">
-                    <footer>Android Development</footer>
+                    <footer class="text-center">Android Development</footer>
                 </div>
                 <div class="about-skill-badge">
                     <img class="hex-badge" src="/assets/img/icons/embedded-badge.png">
-                    <footer>Embedded Systems</footer>
+                    <footer class="text-center">Embedded Systems</footer>
                 </div>
             </div>
         </div>
@@ -77,20 +79,20 @@
     <div class="about-panel-4">
         <div class="container">
             <div class="row">
-                <div class="col-md-6">
+                <div class="col-md-6 random-facts-img">
                     <img id="float-plane-ride" src="/assets/img/profile-pics/float-plane-ride.jpg">
                     <footer>My "I'm totally not freaked out right now" face</footer>
                 </div>
-                <div class="col-md-6">
-                    <h2>Random Tidbits</h2>
+                <div class="col-md-6 random-facts-section">
+                    <h2>Random Facts</h2>
                     <ul>
-                        <li>I am a HUGE Star Wars fan. Lord of the Rings is pretty high up on my list too.</li>
+                        <li>I am a HUGE Star Wars fan (although Lord of the Rings is pretty high up on my list too)</li>
                         <li>I was born in Vancouver, British Columbia</li>
                         <li>I spent half my childhood living on a vineyard</li>
                         <li>My family owns a small winery in the Okanagan Valley (precursor to the last point)</li>
-                        <li>I spent three years studying French before I switched to Engineering (I guess I like pain?)</li>
-                        <li>I used to play hockey and ringette.</li>
-                        <li>Did I mention that I like Star Wars and that I have </li>
+                        <li>I spent three years studying French before I switched to Engineering (yes, I may be insane)</li>
+                        <li>I used to play hockey and ringette</li>
+                        <li>Did I mention that I like Star Wars?</li>
                     </ul>
                 </div>
             </div>

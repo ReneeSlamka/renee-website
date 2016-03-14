@@ -1,6 +1,6 @@
 {% extends 'layout.twig' %}
 
-{% block title %}Renee Slamka{% endblock %}
+{% block title %}Ren&eacutee Slamka{% endblock %}
 
 {% block css %}
 <link rel="stylesheet" href="/assets/css/home.css"/>
@@ -24,12 +24,12 @@
                             computer engineering student at the University
                             of British Columbia. After spending my last two co-op terms doing web development, I
                             figured it was time to take a crack at building my own website.
-                            Feel free to look around!
+                            It's still a work in progress, but feel free to look around!
                         </p>
                         <p id="photo-credit">
                             Special thanks to my uncle Howard Ursuliak
                             for photos that I don't actually look awkward in -
-                            you can check out his other work
+                            you can check out more of his work
                             <a href="http://cielvariablearchives.org/en/component/content/
                             article/545-portfolio-howard-ursuliak.html">here.</a>
                         </p>
@@ -41,7 +41,29 @@
     <div id="homepage-section-2-bg-container">
         <div class="container">
             <header class="text-center">Recent Highlights</header>
-            {%  include 'home-carousel.twig' %}
+            <div class="row text-center row-projects">
+                <a href="/blog-board">
+                    <div class="project-panel" id="blog-board-panel">
+                        <section class="panel-label">
+                            <footer>Blog Board</footer>
+                        </section>
+                    </div>
+                </a>
+                <a href="/falling-myo">
+                    <div class="project-panel" id="falling-myo">
+                        <section class="panel-label">
+                            <footer>Smart Fall Detector</footer>
+                        </section>
+                    </div>
+                </a>
+                <a href="/personal-website">
+                    <div class="project-panel" id="website">
+                        <section class="panel-label">
+                            <footer>Personal Website</footer>
+                        </section>
+                    </div>
+                </a>
+            </div>
         </div>
     </div>
 {% endblock %}
