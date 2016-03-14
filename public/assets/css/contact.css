@@ -21,8 +21,8 @@
 }
 
 .contact-info-section {
-    padding-left: 80px;
-    padding-right: 80px;
+    padding-left: 40px;
+    padding-right: 40px;
     font-size: 18px;
 }
 
@@ -32,7 +32,7 @@
 }
 
 .contact-info-section input, .contact-info-section textarea {
-    background-color: rgba(255,255,255,0.3);
+    background-color: rgba(255,255,255,0.5);
     border-width: 1px;
     border-style: solid;
     border-color: #cccccc;
@@ -53,4 +53,66 @@
 
 #contact-form input {
     margin-bottom: 20px;
+}
+
+@media screen and (max-width:1839px) {
+    .contact-panel-1 {
+        background-position: 100% 0%;
+        background-repeat: no-repeat;
+    }
+}
+
+@media screen and (max-width:1799px) {
+    .contact-panel-1 {
+        background-position: 70% 0%;
+        background-repeat: no-repeat;
+    }
+}
+
+@media screen and (max-width:1699px) {
+    .contact-panel-1 {
+        background-position: 55% 0%;
+        background-repeat: no-repeat;
+    }
+}
+
+@media screen and (max-width:1349px) {
+    .contact-panel-1 {
+        background-position: 43% 0%;
+        background-repeat: no-repeat;
+    }
+}
+
+@media screen and (max-width:1199px) {
+
+    .contact-info-section {
+        padding-left: 15px;
+        padding-right: 40px;
+        font-size: 18px;
+    }
+}
+
+@media screen and (max-width:991px) {
+
+    .contact-info-section {
+        padding-left: 15px;
+        padding-right: 40px;
+        font-size: 18px;
+    }
+}
+
+@media screen and (max-width:859px) {
+
+    .contact-info-section {
+        padding-left: 45px;
+        padding-right: 5px;
+        font-size: 18px;
+    }
+}
+@media screen and (max-width:991px) {
+
+}
+
+@media screen and (max-width:767px) {
+
 }
