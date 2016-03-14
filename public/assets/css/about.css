@@ -45,6 +45,31 @@
 
 }
 
+.skill-set-section {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+}
+
+.about-skill-badge {
+    display: inline-block;
+    margin-left: 10px;
+    margin-right: 10px;
+}
+
+.about-skill-badge footer {
+    font-size: 18px;
+    margin-top: 8px;
+}
+
+.square-badge {
+    width: 150px;
+}
+
+.hex-badge {
+    width: 180px;
+}
+
 .about-panel-4 {
     background-color: #f4f4f4;
     padding-top: 70px;
@@ -54,3 +79,4 @@
 #float-plane-ride {
     width: 400px;
 }
+
