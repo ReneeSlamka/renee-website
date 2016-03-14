@@ -20,3 +20,8 @@
 .hex-badge {
     width: 180px;
 }
+
+#git-badge {
+    height: 152px;
+    width: auto;
+}

@@ -17,6 +17,11 @@
     width: 180px;
 }
 
+#git-badge {
+    height: 152px;
+    width: auto;
+}
+
 #smart-fall-detector-img {
     width: 600px;
 }

@@ -109,10 +109,31 @@ hr {
     margin-bottom: 50px;
 }
 
+.badge-container {
+    display: inline-flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+}
 
 /*General styling*/
 
-.project-page-col {
-    padding-left: 80px;
-    padding-right: 80px;
+
+@media screen and (max-width:1199px) {
+
+    .project-page-col {
+        padding-left: 40px;
+        padding-right: 80px;
+    }
+}
+
+
+
+
+
+
+
+
+div.project-image {
+
 }

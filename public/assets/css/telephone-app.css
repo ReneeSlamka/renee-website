@@ -17,6 +17,11 @@
     width: 180px;
 }
 
+#git-badge {
+    height: 152px;
+    width: auto;
+}
+
 #telephone-app-img {
     width: 300px;
 }

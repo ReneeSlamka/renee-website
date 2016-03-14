@@ -41,6 +41,56 @@
     margin-bottom: 60px;
 }
 
+
+/* ======Temporary Styling ======== */
+.project-panel {
+    display: inline-flex;
+    align-items: flex-end;
+    width: 290px;
+    height: 220px;
+    background-color: #222222;
+    margin-left: 12px;
+    margin-right: 12px;
+    border-radius: 5px;
+    -moz-border-radius: 5px;
+    -webkit-border-radius: 5px;
+    box-shadow: 3px 3px 5px rgba(0,0,0,0.3);
+    -moz-box-shadow: 3px 3px 5px rgba(0,0,0,0.3);
+    -webkit-box-shadow: 3px 3px 5px rgba(0,0,0,0.3);
+    overflow: hidden;
+    background-size: cover;
+}
+
+.row-projects {
+    margin-bottom: 16px;
+}
+
+.panel-label {
+    padding-left: 15px;
+    padding-top: 10px;
+    padding-bottom: 15px;
+    width: 100%;
+    background-color: rgba(255,255,255,0.7);
+}
+
+.project-panel footer {
+    font-size: 18px;
+    float: left;
+}
+
+
+#blog-board-panel {
+    background-image: url("https://static.pexels.com/photos/2752/city-sunny-people-street.jpg");
+}
+
+#falling-myo {
+    background-image: url("/assets/img/project-preview-pics/falling-myo.jpg");
+}
+
+#website {
+    background-image: url("/assets/img/project-preview-pics/website-screenshot.png");
+}
+
 /*---Styling for carousel---*/
 .carousel-control.left, .carousel-control.right {
     background-image: none;

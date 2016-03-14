@@ -20,21 +20,27 @@
 }
 
 
-
 .about-panel-2 {
     background-color: #f4f4f4;
     padding-top: 170px;
     padding-bottom: 170px;
 }
 
+.renee-attribute-section {
+    display: inline-flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
 .renee-attribute-section * {
-    display: inline-block;
     margin-left: 8px;
     margin-right: 8px;
 }
 
 .renee-attribute-section h2 {
     font-size: 60px;
+    margin-top: 45px;
 }
 
 .attribute-set-img {
@@ -42,13 +48,23 @@
 }
 
 .about-panel-3 {
+    padding-top: 60px;
+    padding-bottom: 80px;
 
+}
+
+.about-panel-3 h2 {
+    font-size: 50px;
+    margin-bottom: 40px;
 }
 
 .skill-set-section {
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
+    justify-content: center;
+    padding-left: 80px;
+    padding-right: 80px;
 }
 
 .about-skill-badge {
@@ -70,10 +86,33 @@
     width: 180px;
 }
 
+#git-badge {
+    height: 152px;
+    width: auto;
+}
+
 .about-panel-4 {
     background-color: #f4f4f4;
     padding-top: 70px;
     padding-bottom: 100px;
+}
+
+.random-facts-section h2 {
+    font-size: 50px;
+    margin-bottom: 20px;
+}
+
+.random-facts-section ul{
+   margin-left: -23px;
+}
+
+.random-facts-section li {
+    margin-bottom: 15px;
+    font-size: 16px;
+}
+
+.random-facts-img {
+   padding-left: 80px;
 }
 
 #float-plane-ride {
