@@ -1,17 +1,52 @@
-.continued-description {
-    margin-top: 30px;
-    margin-bottom: 30px;
+#website-pic-1 {
+    width: 560px;
 }
 
-.img-caption {
-    margin-left: 0px;
-    font-size: 16px;
+#website-project-planning {
+  padding-top: 50px;
+}
+
+#website-project-planning footer {
+    margin-top: 3px;
+    margin-left: 95px;
+    font-size: 14px;
+}
+
+.website-mockup-gallery {
+    width: 100%;
+    display: inline-flex;
+    flex-direction: row;
+    justify-content: space-between;
+    padding-left: 10%;
+    padding-right: 10%;
+    padding-top: 60px;
+    padding-bottom: 60px;
+}
+
+.website-mockup-gallery img {
+    height: 150px;
+}
+
+#website-tech-stack {
+    padding-top: 50px;
+}
+
+#website-direction {
+    padding-top: 50px;
 }
 
 .personal-website-skill-badge {
     display: inline-block;
     margin-left: 10px;
     margin-right: 10px;
+}
+
+#website-pic-5 {
+    width: 800px;
+    margin-top: 60px;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
 }
 
 .personal-website-skill-badge footer {
@@ -32,15 +67,28 @@
     width: auto;
 }
 
-#personal-website-img {
-    width: 600px;
+/* General Styling */
+.project-description h2 {
+    margin-bottom: 20px;
 }
 
+@media screen and (max-width:1199px) {
+    #website-pic-1 {
+        width: 460px;
+    }
 
-#first-site-mockup-img {
-    width: 800px;
-}
+    #website-pic-5 {
+        width: 700px;
+    }
 
-#eyes-closed-img {
-    width: 800px;
+    #website-project-planning footer {
+        margin-top: 3px;
+        margin-left: 60px;
+        font-size: 14px;
+    }
+
+    .project-description p {
+        font-size: 18px;
+    }
+
 }

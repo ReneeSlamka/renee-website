@@ -113,21 +113,13 @@ hr {
 
 /*General styling*/
 
-
 @media screen and (max-width:1199px) {
 
-    .project-page-col {
+    /*.project-page-col {
         padding-left: 40px;
         padding-right: 80px;
-    }
+    }*/
 }
-
-
-
-
-
-
-
 
 div.project-image {
 

@@ -5,6 +5,7 @@
 {% block css %}
     <link rel="stylesheet" href="/assets/css/project-page-layout.css"/>
     <link rel="stylesheet" href="/assets/css/personal-website.css"/>
+    <link rel="stylesheet" href="/vendor/ekko-lightbox/dist/ekko-lightbox.css"/>
 {% endblock %}
 
 {% block projectTitle %}
@@ -20,46 +21,107 @@
 {% endblock %}
 
 {% block projectSummary %}
-    A website to showcase my portfolio of projects, and one day host my own blog.
+    A website to showcase my past and current projects, and one day host my own blog.
 {% endblock %}
 
 {% block projectLinks %}
 {% endblock %}
 
 {% block projectImage %}
-    <img id="personal-website-img" src="/assets/img/project-page-pics/current-site-screenshot.png">
+    <img id="website-pic-1" src="/assets/img/project-page-pics/current-site-screenshot.png">
 {% endblock %}
 
 {% block projectLanguages%}
-    <p>PHP, Html, CSS</p>
+    <p>PHP, JavaScript</p>
 {% endblock %}
 
 {% block projectTechStack%}
-    <p>Twig, Bootstrap, Slim, Bower, Composer, Photoshop</p>
+    <p>Html, CSS, Twig, Bootstrap, Slim, Bower, Composer, Photoshop</p>
 {% endblock %}
 
 {% block projectDescription %}
-    <p class="continued-description">
-        Comming soon!
-    </p>
-    <img src="/assets/img/project-page-pics/letter-insanity.png">
-    <footer class="img-caption">
-        When you become obsessed with finding the perfect letters...
-    </footer>
-    <p class="continued-description">
-        More details here soon!
-    </p>
-    <img id="first-site-mockup-img" src="/assets/img/project-page-pics/first-site-mockup.png">
-    <footer class="img-caption">
-        My first mockup for the front page
-    </footer>
-    <p class="continued-description">
-        And here!
-    </p>
-    <img id="eyes-closed-img" src="/assets/img/project-page-pics/eyes-closed.JPG">
-    <footer class="img-caption">
-        The hardest part of this entire project: keeping my freakin' eyes open for the camera...
-    </footer>
+    <script>
+        $(document).delegate('*[data-toggle="lightbox"]', 'click', function(event) {
+            event.preventDefault();
+            $(this).ekkoLightbox();
+        });
+    </script>
+    <script src="/vendor/ekko-lightbox/dist/ekko-lightbox.js"></script>
+    <div class="row" id="website-project-conception">
+        <h2>Project Conception</h2>
+        <p>
+            As I stated on my home page, two of my previous co-op jobs involved web development.
+            I'd tried experimenting with HTML and simple web design before these experiences, but due to my
+            lack of knowledge about the different tools available to simplify the process, the whole thing
+            seemed pretty cumbersome and I soon lost interest. However, after a year of being immersed in different
+            frameworks and tools like ReactJS, Twig, and Bootstrap to name a few, I decided it was
+            high time I built my own website. I wanted a place to showcase everything I'd worked on up to this point,
+            and just share bits of myself I didn't care to post on Facebook or LinkedIn. I also needed another excuse
+            to procrastinate when I wanted a break from doing homework...
+        </p>
+    </div>
+    <div class="row" id="website-project-planning">
+        <h2>UI Design and Planning</h2>
+        <p>
+            I don't often advertise this, but I'm actually a pretty artistic person. I was obsessed with drawing during
+            my childhood and teenage years, and at one point even had plans to pursue a career in 2d animation once I
+            finished high school. I don't draw nearly as much anymore, but I still enjoy dabbling in different areas of
+            art every now and then. I recently became really interested in UI design, and used this website as an
+            opportunity to practice. I'd never designed a website before, so I looked through a wide variety of examples
+            on the internet to pick up on common trends and incorporate features and layout styles that I liked. I then
+            spent WAYYY too much time hashing out different designs in Photoshop. I had originally envisioned a very different
+            look for this site, but after some consideration went in another direction.
+        </p>
+
+        <div class="website-mockup-gallery text-center">
+            <a href="/assets/img/project-page-pics/site-first-home-mockup.jpg" data-toggle="lightbox"
+               data-title="My first mockup for the home page">
+                <img src="/assets/img/project-page-pics/site-first-home-mockup.jpg" class="img-responsive mockup-preview" >
+            </a>
+            <a href="/assets/img/project-page-pics/site-first-about-mockup.jpg" data-toggle="lightbox"
+               data-title="My first mockup for the about-me page">
+                <img src="/assets/img/project-page-pics/site-first-about-mockup.jpg" class="img-responsive mockup-preview" >
+            </a>
+            <a href="/assets/img/project-page-pics/letter-insanity.png" data-toggle="lightbox"
+               data-title="When you become obsessed with finding the perfect letters for your logo...">
+                <img src="/assets/img/project-page-pics/letter-insanity.png" class="img-responsive mockup-preview" >
+            </a>
+        </div>
+
+        <p>
+            A lot of simple but elegant websites I'd seen used photos for their landing page backgrounds, so I decided
+            to go for a similar look. Thankfully my uncle is a professional photographer, and was nice enough to spend
+            an afternoon shooting pictures of a model that was caught blinking in nine out of ten photos...
+        </p>
+        <img id="website-pic-5" src="/assets/img/project-page-pics/eyes-closed.JPG">
+        <footer>
+            The hardest part of this entire project: keeping my freakin' eyes open for the camera...
+        </footer>
+    </div>
+    <div class="row" id="website-tech-stack">
+        <h2>Tech Stack</h2>
+        <p>
+            After my experience as a front-end intern at The Cloud Innovation Center, I was pretty hung up on the
+            pure awesomeness of JavaScript and ReactJS. I wanted to "Reactify" everything! However, after working on
+            Dynamic Leap's company website for several months using PHP, Slim, and theTwig template engine, I was
+            hooked. The entire setup what just so easy to use, and exactly the kind of tooling I had been looking for.
+            So, as you can probably guess, these were my weapons of choice for tackling the development of this site.
+            I still plan to use JavaScript for some things down the road, but all of my HTML was structured using Twig.
+            For styling I stuck with Bootstrap, as I don't have a
+            particularly complex design and it was perfect for getting the page layout up relatively quickly.
+        </p>
+    </div>
+    <div class="row" id="website-direction">
+        <h2>Future Direction</h2>
+        <p>
+            I still have a long way to go before I consider this project "finished". Many pages still need more content,
+            and I've yet to tackle styling for mobile displays. If anything, I don't think I'll ever stop working on this
+            website. Styles always change, and I expect I'll try a different look in a few years when I've thought of
+            something new. For now, I'm planning to add a blog and hopefully post some more cool projects to my
+            portfolio page when I have the time and everything else is complete. So be sure to check back every
+            now and again, who knows what new content might be here the next time you visit!
+        </p>
+    </div>
 
 {% endblock %}
 
