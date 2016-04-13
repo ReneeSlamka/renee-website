@@ -4,6 +4,8 @@
 
 {% block css %}
     <link rel="stylesheet" href="/assets/css/project-page-layout.css"/>
+    <link rel="stylesheet" href="/assets/css/brewmeister.css"/>
+    <link rel="stylesheet" href="/vendor/ekko-lightbox/dist/ekko-lightbox.css"/>
 {% endblock %}
 
 {% block projectTitle %}
@@ -11,37 +13,165 @@
 {% endblock %}
 
 {% block projectType %}
-    University Project
+    University Coursework - Introduction to Databases Term Project
 {% endblock %}
 
 {% block projectDate %}
-    In Progress - Planning Stages
+    Completed
 {% endblock %}
 
 {% block projectSummary %}
-    A web app akin to Yelp that helps users find new beers in their
-    city and post ratings to help other users make an informed decision
-    about which beers to try.
+    A web app similar to Yelp that helps users discover new beers to try,
+    and allows them to share ratings and reviews with others.
 {% endblock %}
 
 {% block projectLinks %}
+    <a href="https://github.com/TheSchnoo/Brewmeister">Project Source Code</a>
 {% endblock %}
 
 {% block projectLanguages%}
     <p>Java, JavaScript</p>
 {% endblock %}
 {% block projectTechStack%}
-    <p>Spring, JDBC, AngularJS, Bootstrap</p>
+    <p>Spring MVC, JDBC, AngularJS, Bootstrap, MySQL</p>
 {% endblock %}
 
 {% block projectImage %}
+    <img id="brewmeister-pic-1" src="/assets/img/project-page-pics/brewmeister-profile-pic.jpg"/>
 {% endblock %}
 
 
 {% block projectDescription %}
-    Details coming soon!
+    <script>
+        $(document).delegate('*[data-toggle="lightbox"]', 'click', function(event) {
+            event.preventDefault();
+            $(this).ekkoLightbox();
+        });
+    </script>
+    <script src="/vendor/ekko-lightbox/dist/ekko-lightbox.js"></script>
+    <div class="row" id="brewmeister-conception-section">
+        <h2 class="brewmeister-section-title">Project Conception</h2>
+        <p>
+            My group members and I were tasked with designing an application that fulfilled two
+            main requirements: it had to incorporate certain types of SQL queries, as well as enable the user to alter
+            those queries with a simple GUI. Beyond that, anything was allowed.
+        </p>
+        <p>
+            Although some of us had only just met, we quickly discovered we all had one thing in common: we
+            all loved beer. And I'm not talking the bottom-of-the-barrel brands like Coors or Wildcat. No,
+            we were all total craft beer snobs, determined to find the next great Hefeweizen (ok, maybe I'll admit
+            to drinking the odd pint of Molson Canadian when I'm out and about, but c'mon, Vancouver's expensive).
+            Anyways, with this in mind, we came up with the idea of creating an app that would help up-and-coming beer
+            connoisseurs like ourselves find new beers to try and keep track of our favourites. Behold, the amazing Brewmeister
+            was born!
+        </p>
+    </div>
+    <div class="row" id="brewmeister-planning-section">
+        <h2 class="brewmeister-section-title">Project Planning</h2>
+        <p>
+            The project itself included several planning stage assignments to be completed before we started working
+            on the actual code. These included drawing up a preliminary UML diagram for our database, documenting
+            what users could do with our app ("user stories"), and explaining which features would implement the different
+            mandatory query types (aggregate, projection, etc.).
+        </p>
+        <p>
+            Being a somewhat artsy person, I decided to try my hand at UI design and create mockups for our project.
+            We first decided on a very basic layout for the home page by looking at different foodie websites, and then
+            I went to work finding pictures and playing around with them in photoshop. The final look ended up being
+            a little different due to time constraints and changes in our site's features to meet project requirements,
+            but overall the finished product still had a very clean, polished look.
+        </p>
+        <div class="brewmeister-mockup-gallery text-center">
+            <a href="/assets/img/project-page-pics/landing-page-customer-revised.jpg" data-toggle="lightbox"
+                data-title="Mockup for the main user landing page">
+                <img src="/assets/img/project-page-pics/landing-page-customer-revised.jpg" class="img-responsive mockup-preview" >
+            </a>
+            <a href="/assets/img/project-page-pics/landing-page-with-search-results.jpg" data-toggle="lightbox"
+               data-title="Mockup for the main user landing page with search results">
+                <img src="/assets/img/project-page-pics/landing-page-with-search-results.jpg" class="img-responsive mockup-preview" >
+            </a>
+            <a href="/assets/img/project-page-pics/vendor-profile-page.jpg" data-toggle="lightbox"
+               data-title="Mockup for a vendor's information page">
+                <img src="/assets/img/project-page-pics/vendor-profile-page.jpg" class="img-responsive mockup-preview" >
+            </a>
+            <a href="/assets/img/project-page-pics/brewmeister-uml-diagram.png" data-toggle="lightbox"
+               data-title="UML diagram of our database">
+                <img src="/assets/img/project-page-pics/brewmeister-uml-diagram.png" class="img-responsive mockup-preview" >
+            </a>
+        </div>
+    </div>
+    <div class="row" id="brewmeister-front-end-section">
+        <div class="col-md-6">
+            <img id="brewmeister-pic-6" src="/assets/img/project-page-pics/brewmeister-web-controller.png">
+            <footer class="brewmeister-footer">
+                Our web controller to handle incoming HTTP requests from the front end
+            </footer>
+        </div>
+        <div class="col-md-6">
+            <h2 class="brewmeister-section-title">Implementation - The Front-End</h2>
+            <p>
+                The front-end of our application consisted of a website running off a local python server.
+                All data requests and displays were handled using the AngularJS framework, which came with several
+                pre-styled templates for various UI elements such as popups and forms. Different UI inputs were wired to send HTTP
+                requests to certain API endpoints in the backend, and then the corresponding data fields were populated
+                with the parsed JSON once a response was received. In order to smoothly coordinate the sending
+                and receiving of data between the front-end and back-end, we created an API document that outlined
+                the expected labelling of the various fields in both the HTTP requests and responses.
+            </p>
+        </div>
+    </div>
+    <div class="row" id="beermeister-backend-section">
+        <div class="col-md-6">
+            <h2 class="brewmeister-section-title">Implementation - The Back-End</h2>
+            <p>
+                Our first task for the back-end was to set up the database and server that would be housing all our test
+                data and running our Java code. Our final configuration relied on a locally hosted
+                Oracle database and Tomcat server, but we plan to move the project over to a remote hosting service
+                like Heroku in the near future.
+            </p>
+            <p>
+                The creation of our database tables and their population with test data was done through two separate
+                SQL scripts. The structure of our databases changed quite a bit during the actual coding phase, as we
+                discovered several emergent requirements that forced us to either redesign or add to our existing set of
+                tables.
+            </p>
+            <p>
+                In order to simplify the code required to communicate with the front-end, we decided to use
+                the Spring framework's MVC module. The web controller annotations proved particularly useful,
+                as it allowed us to easily create custom-configured end points for our APIs without having to
+                do any string parsing. We also added a configuration class to set all the default headers on
+                all http responses sent out.
+            </p>
+        </div>
+        <div class="col-md-6">
+            <img id="brewmeister-pic-7" src="/assets/img/project-page-pics/brewmeister-sql.png">
+            <footer class="brewmeister-footer">The SQL script to set up our database</footer>
+
+            <img id="brewmeister-pic-8" src="/assets/img/project-page-pics/brewmeister-update-sql.png">
+            <footer class="brewmeister-footer">The SQL script to populate our database with test data</footer>
+        </div>
+    </div>
 {% endblock %}
 
 {% block projectSkills %}
-    To be determined...
+    <div class="brewmeister-skill-badge">
+        <img class="square-badge" src="/assets/img/icons/web-dev-badge.png">
+        <footer class="text-center">Front End Development</footer>
+    </div>
+    <div class="brewmeister-skill-badge">
+        <img class="hex-badge" src="/assets/img/icons/db-badge.png">
+        <footer class="text-center">Databases</footer>
+    </div>
+    <div class="brewmeister-skill-badge">
+        <img class="square-badge" id="git-badge" src="/assets/img/icons/git-badge.png">
+        <footer class="text-center">Source Control - Git</footer>
+    </div>
+    <div class="brewmeister-skill-badge">
+        <img class="hex-badge" src="/assets/img/icons/back-end-dev-badge.png">
+        <footer class="text-center">Back End Development</footer>
+    </div>
+    <div class="brewmeister-skill-badge">
+        <img class="square-badge" src="/assets/img/icons/ux-badge.png">
+        <footer class="text-center">UI Design</footer>
+    </div>
 {% endblock %}

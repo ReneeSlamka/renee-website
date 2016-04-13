@@ -1,0 +1,77 @@
+@font-face {
+    font-family: "PenelopeAnne";
+    src: url("/assets/fonts/bythebutterfly_penelope-anne/PenelopeAnne.ttf");
+}
+
+
+@font-face {
+    font-family: "";
+    src: url("/assets/fonts//");
+}
+
+/*new*/
+@font-face {
+    font-family: "Robot";
+    src: url("/assets/fonts/divide-by-zero_robot-teacher/robot.ttf");
+}
+
+@font-face {
+    font-family: "MANDINGO";
+    src: url("/assets/fonts/font-a-licious_mandingo/MANDINGO.TTF");
+}
+
+@font-face {
+    font-family: "PPETRIAL";
+    src: url("/assets/fonts/joebob-graphics_pencilpete/PPETRIAL.otf");
+}
+
+@font-face {
+    font-family: "ArtBrewery";
+    src: url("/assets/fonts/jonathan-s-harris_art-brewery/ArtBrewery.ttf");
+}
+
+@font-face {
+    font-family: "ArtStudio";
+    src: url("/assets/fonts/jonathan-s-harris_art-studio/ArtStudio.ttf");
+}
+
+@font-face {
+    font-family: "";
+    src: url("/assets/fonts/jonathan-s-harris_confetti-stream/ConfettiStream.ttf");
+}
+
+@font-face {
+    font-family: "Zantroke";
+    src: url("/assets/fonts/gluk_zantroke/Zantroke.otf");
+}
+
+@font-face {
+    font-family: "LoveYaLikeASister";
+    src: url("/assets/fonts/kimberly-geswein_love-ya-like-a-sister/LoveYaLikeASister.ttf");
+}
+
+
+@font-face {
+    font-family: "KTF-Roadstar";
+    src: url("/assets/fonts/ktf-kustomtype_ktf-roadstar/KTF-Roadstar.ttf");
+}
+
+@font-face {
+    font-family: "Got_Heroin";
+    src: url("/assets/fonts/livin-hell_got-heroin/Got_Heroin.ttf");
+}
+
+@font-face {
+    font-family: "CherrySwash-Regular";
+    src: url("/assets/fonts/nataliya-kasatkina_cherry-swash/CherrySwash-Regular.ttf");
+}
+
+@font-face {
+    font-family: "CherrySwash-Bold";
+    src: url("/assets/fonts/nataliya-kasatkina_cherry-swash/CherrySwash-Bold.ttf");
+}
+
+@font-face {
+    font-family: "LTChickenhawk";
+    src: url("/assets/fonts/nymphont_lt-chickenhawk/LTChickenhawk.ttf");
+}

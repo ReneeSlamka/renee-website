@@ -83,8 +83,8 @@ $app->get('/heart-rate-monitor', function () use ($app) {
     $app->render('/pages/heart-rate-monitor.twig');
 });
 
-$app->get('/student-budgeting-app', function () use ($app) {
-    $app->render('/pages/student-budgeting-app.twig');
+$app->get('/brewmeister', function () use ($app) {
+    $app->render('/pages/brewmeister.twig');
 });
 
 $app->get('/future-projects', function () use ($app) {
