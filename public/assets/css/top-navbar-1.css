@@ -1,5 +1,6 @@
 /* navbar container styling */
 .top-navbar-container {
+    z-index: 2;
     position: absolute;
     width: 100%;
     height: 100px;
@@ -30,6 +31,10 @@
 
 /* mobile button icon styling */
 #mobile-menu-button {
+    display: none;
+}
+
+#top-navbar-mobile-linebreak {
     display: none;
 }
 
@@ -103,7 +108,7 @@
     height: 26px;
     margin-left: 10px;
     margin-right: 10px;
-    margin-bottom: 4px;
+    margin-top: -7px;
 }
 
 .social-media-links a:hover {
@@ -133,9 +138,15 @@
 }
 
 @media screen and (max-width: 1199px) {
+    @-moz-document url-prefix() {
+        div.site-links-section {
+            top: 32px;
+        }
+    }
+
     .site-links-section {
         float: right;
-        top: 32px;
+        top: 52px; /*32px; works for firefox, not for old chrome?*/
     }
 
     #name-text-logo {
@@ -162,29 +173,63 @@
 
     .social-media-links img {
         height: 24px;
-        margin-bottom: 2px;
+        margin-top: -3px;
+    }
+
+    @-moz-document url-prefix() {
+        div.site-links-section {
+            top: 24px;
+        }
     }
 
     .site-links-section {
-        top: 24px;
+        top: 42px;
     }
 }
 
 @media screen and (max-width: 767px) {
     .top-navbar-container {
-        height: 272px;
+        height: 296px;
+    }
+
+    #name-text-logo {
+        line-height: 0.55;
+        margin-bottom: 0px;
+        margin-top: 28px;
     }
 
     #mobile-menu-button {
         display: inline-block;
-        height: 20px;
+        height: 48px;
+        float: right;
+        margin-top: 16px;
+        margin-right: 12px;
+    }
+
+    #top-navbar-mobile-linebreak {
+        display: block;
+        width: 100%;
+        border-width: 1px;
+        background-color: #00b3ee;
+        margin-top: 10px;
+        margin-bottom: 30px;
+        opacity: 0.8;
     }
 
     .site-links-section {
         display: block;
+        position: inherit;
         float: none;
         top: -32px;
         margin-left: 0px;
+    }
+
+    @-moz-document url-prefix() {
+        /* "undoing" a firefox fix for a diff screen size for simplicity */
+        .nav-links-section {
+            position: inherit;
+            top: 0px;
+        }
     }
 
     .nav-links-section ul {
@@ -203,6 +248,7 @@
     .social-media-links {
         display: none;
     }
+
 }
 
 @font-face {
