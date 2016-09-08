@@ -4,6 +4,7 @@
 
 {% block css %}
 <link rel="stylesheet" href="/assets/css/home.css"/>
+    <link rel="stylesheet" type="text/css" href="/vendor/slick-1.6.0/slick/slick-theme.css"/>
 <!--<link rel="stylesheet" href="/assets/css/home-carousel.css" />-->
 {% endblock %}
 
@@ -41,28 +42,53 @@
     <div id="homepage-section-2-bg-container">
         <div class="container">
             <header class="text-center">Recent Highlights</header>
-            <div class="row text-center row-projects">
-                <a href="/brewmeister">
-                    <div class="project-panel" id="brewmeister">
-                        <section class="panel-label">
-                            <footer>Brewmeister</footer>
-                        </section>
+            <div class="row">
+                <div class="col-md-10 col-md-offset-1 col-xs-10 col-xs-10-offset-1">
+                    <div class="home-page-carousel">
+                        <a href="/brewmeister">
+                            <div class="project-panel" id="brewmeister">
+                                <section class="panel-label">
+                                    <footer>Brewmeister</footer>
+                                </section>
+                            </div>
+                        </a>
+                        <a href="/personal-website">
+                            <div class="project-panel" id="website">
+                                <section class="panel-label">
+                                    <footer>Personal Website</footer>
+                                </section>
+                            </div>
+                        </a>
+                        <a href="/blog-board">
+                            <div class="project-panel" id="blog-board-panel">
+                                <section class="panel-label">
+                                    <footer>Blog Board</footer>
+                                </section>
+                            </div>
+                        </a>
+                        <a href="/brewmeister">
+                            <div class="project-panel" id="brewmeister">
+                                <section class="panel-label">
+                                    <footer>Brewmeister1</footer>
+                                </section>
+                            </div>
+                        </a>
+                        <a href="/personal-website">
+                            <div class="project-panel" id="website">
+                                <section class="panel-label">
+                                    <footer>Personal Website1</footer>
+                                </section>
+                            </div>
+                        </a>
+                        <a href="/blog-board">
+                            <div class="project-panel" id="blog-board-panel">
+                                <section class="panel-label">
+                                    <footer>Blog Board1</footer>
+                                </section>
+                            </div>
+                        </a>
                     </div>
-                </a>
-                <a href="/personal-website">
-                    <div class="project-panel" id="website">
-                        <section class="panel-label">
-                            <footer>Personal Website</footer>
-                        </section>
-                    </div>
-                </a>
-                <a href="/blog-board">
-                    <div class="project-panel" id="blog-board-panel">
-                        <section class="panel-label">
-                            <footer>Blog Board</footer>
-                        </section>
-                    </div>
-                </a>
+                </div>
             </div>
         </div>
     </div>

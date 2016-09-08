@@ -1,26 +1,19 @@
-(function(){
-    // setup your carousels as you normally would using JS
-    // or via data attributes according to the documentation
-    // http://getbootstrap.com/javascript/#carousel
-    $('#carousel123').carousel({ interval: 4000 });
-}());
+$(document).ready(function(){
+    var numSlides;
 
-(function(){
-    $('.carousel-showmanymoveone .item').each(function(){
-        var itemToClone = $(this);
+    if ($( window ).width() > 991) {
+        numSlides = 3;
+    } else if ($( window ).width() > 700) {
+        numSlides = 2;
+    } else if ($( window ).width() > 500) {
+        numSlides = 1;
+    } else {
+        numSlides = 1;
+    }
 
-        for (var i=1;i<4;i++) {
-            itemToClone = itemToClone.next();
-
-            // wrap around if at end of item collection
-            if (!itemToClone.length) {
-                itemToClone = $(this).siblings(':first');
-            }
-
-            // grab item, clone, add marker class, add to collection
-            itemToClone.children(':first-child').clone()
-                .addClass("cloneditem-"+(i))
-                .appendTo($(this));
-        }
+    $('.home-page-carousel').slick({
+        infinite: true,
+        slidesToShow: numSlides,
+        slidesToScroll: numSlides
     });
-}());
+});
