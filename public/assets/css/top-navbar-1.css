@@ -189,7 +189,7 @@
 
 @media screen and (max-width: 767px) {
     .top-navbar-container {
-        height: 296px;
+        height: 80px;
     }
 
     #name-text-logo {
@@ -207,7 +207,7 @@
     }
 
     #top-navbar-mobile-linebreak {
-        display: block;
+        display: none;
         width: 100%;
         border-width: 1px;
         background-color: #00b3ee;
@@ -217,7 +217,7 @@
     }
 
     .site-links-section {
-        display: block;
+        display: none;
         position: inherit;
         float: none;
         top: -32px;
@@ -249,19 +249,4 @@
         display: none;
     }
 
-}
-
-@font-face {
-    font-family: "BEYONDSKTRIAL";
-    src: url("/assets/fonts/billy-argel_beyond-sky/BEYONDSKTRIAL.ttf");
-}
-
-@font-face {
-    font-family: "Always Forever";
-    src: url("/assets/fonts/brittney-murphy-design_always-forever/AlwaysForever.ttf");
-}
-
-@font-face {
-    font-family: "Always Forever Bold";
-    src: url("/assets/fonts/brittney-murphy-design_always-forever/AlwaysForeverBold.ttf");
 }
