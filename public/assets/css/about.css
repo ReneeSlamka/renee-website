@@ -1,5 +1,6 @@
+/* first intro panel styling and inner elements styling */
 .about-panel-1 {
-    padding-top: 50px;
+    padding-top: 140px;
     box-shadow: 0px 7px 10px rgba(0,0,0,0.4);
 }
 
@@ -16,10 +17,21 @@
 }
 
 .about-portrait {
-    width: 600px;
+    width: 570px;
+    margin-left: -16%;
 }
 
+.about-portrait-mobile {
+    display: none;
+}
 
+#about-hashtag {
+    font-size: 32px;
+    margin-top: 24px;
+    color: lightseagreen;
+}
+
+/* second summary panel styling and inner elements styling */
 .about-panel-2 {
     background-color: #f4f4f4;
     padding-top: 170px;
@@ -54,6 +66,8 @@
 
 }
 
+
+/* third skill panel styling and inner elements styling */
 .about-panel-3 h2 {
     font-size: 50px;
     margin-bottom: 40px;
@@ -64,14 +78,15 @@
     flex-direction: row;
     flex-wrap: wrap;
     justify-content: center;
-    padding-left: 80px;
-    padding-right: 80px;
+    padding-left: 10px;
+    padding-right: 10px;
 }
 
 .about-skill-badge {
     display: inline-block;
     margin-left: 10px;
     margin-right: 10px;
+    margin-top: 20px;
 }
 
 .about-skill-badge footer {
@@ -87,11 +102,53 @@
     width: 180px;
 }
 
-#git-badge {
+#git-badge-graphic {
     height: 152px;
     width: auto;
 }
 
+#backend-dev-badge-graphic {
+    margin-bottom: 5px;
+}
+
+#ui-design-badge-graphic {
+    margin-bottom: 5px;
+}
+
+#android-badge-graphic {
+    margin-bottom: 5px;
+}
+
+#skill-description-container {
+    background-color: rgba(255,184,77,0.7);
+    margin-top: 20px;
+    margin-left: 8%;
+    width: 80%;
+    height: 350px;
+    border-radius: 8px;
+    padding-left: 8%;
+    padding-right: 8%;
+    padding-top: 4%;
+}
+
+#skill-title {
+    font-size: 28px;
+}
+
+#related-projects {
+    font-size: 18px;
+}
+
+.active {
+    display: block;
+}
+
+.inactive {
+    display: none;
+}
+
+
+/* fourth facts panel styling */
 .about-panel-4 {
     background-color: #f4f4f4;
     padding-top: 70px;
@@ -104,7 +161,7 @@
 }
 
 .random-facts-section ul{
-   margin-left: -23px;
+   margin-left: -18px;
 }
 
 .random-facts-section li {
@@ -118,5 +175,84 @@
 
 #float-plane-ride {
     width: 400px;
+    border-radius: 80px;
+    margin-bottom: 12px;
 }
+
+@media screen and (min-width: 1400px) {
+    .about-portrait {
+        width: 600px;
+    }
+}
+
+@media screen and (max-width: 1199px) {
+    .intro-section {
+        padding-left: 50px;
+        padding-right: 50px;
+    }
+
+    .about-portrait {
+        width: 530px;
+    }
+
+    .random-facts-img {
+        padding-left: 20px;
+    }
+}
+
+@media screen and (max-width: 991px) {
+    .about-panel-1 {
+        padding-top: 130px;
+    }
+
+    .intro-section {
+        padding-left: 26px;
+        padding-right: 40px;
+        font-size: 18px;
+    }
+
+    .intro-section h1 {
+        font-size: 52px;
+    }
+
+    .about-portrait {
+        width: 490px;
+        margin-left: -20%;
+    }
+
+    #about-hashtag {
+        font-size: 28px;
+    }
+
+    #float-plane-ride {
+        width: 310px;
+        margin-top: 24px;
+    }
+
+    .random-facts-section h2 {
+        font-size: 38px;
+    }
+}
+
+@media screen and (max-width: 767px) {
+    .about-portrait {
+        display: none;
+    }
+
+    .about-portrait-mobile {
+        display: block;
+        width: 400px;
+        margin: 20px auto;
+    }
+
+    .intro-section h1 {
+        margin-top: 50px;
+    }
+
+    #about-hashtag {
+        margin-bottom: 80px;
+    }
+}
+
+
 

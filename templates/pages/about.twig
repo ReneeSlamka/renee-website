@@ -6,23 +6,29 @@
     <link rel="stylesheet" href="/assets/css/about.css" />
 {% endblock %}
 
+{% block js %}
+    <script src="/assets/js/about-skill-info-display.js"></script>
+{% endblock %}
+
 {% block content %}
+    <div class="top-navbar-underimage"></div>
     <div class="about-panel-1">
         <div class="container">
             <div class="row">
-                <div class="col-md-6 intro-section">
+                <div class="col-xs-12 col-sm-6 col-sm-push-6">
+                    <img class="about-portrait" src="/assets/img/profile-pics/about-portrait.png">
+                    <img class="about-portrait-mobile" src="/assets/img/profile-pics/about-portrait-cropped.png">
+                </div>
+                <div class="col-xs-10 col-xs-offset-1 col-sm-6 col-sm-offset-0 col-sm-pull-6 intro-section">
                     <h1>About Me</h1>
                     <p>Before you ask, no, I'm not French.</p>
                     <p>
-                        I'm a longtime Vancouverite, and currently in the third year of my
+                        I'm a longtime Vancouverite, and currently in the final year of my
                         Bachelor of Applied Science degree in Software Engineering at the
-                        University of British Columbia. I'm not afraid of a little rain,
-                        and I'm so thankful to be studying in one of the most beautiful
-                        cities in Canada.
+                        University of British Columbia. I have yet to jump on the yoga bandwagon
+                        but I must admit I love this city (and its abundance of cheap sushi).
                     </p>
-                </div>
-                <div class="col-md-6">
-                    <img class="about-portrait" src="/assets/img/profile-pics/about-portrait.png">
+                    <p id="about-hashtag">#westcoastbestcoast</p>
                 </div>
             </div>
         </div>
@@ -43,35 +49,74 @@
     </div>
     <div class="about-panel-3">
         <div class="container">
-            <h2 class="text-center">Skill Set</h2>
-            <div class="skill-set-section">
-                <div class="about-skill-badge">
-                    <img class="square-badge" src="/assets/img/icons/web-dev-badge.png">
-                    <footer class="text-center">Front End Development</footer>
+            <div class="row">
+                <h2 class="text-center">Skill Set</h2>
+                <div class="col-md-7">
+                    <div class="skill-set-section">
+                        <div class="about-skill-badge" id="front-end-dev-badge">
+                            <img class="square-badge" src="/assets/img/icons/web-dev-badge.png">
+                            <footer class="text-center">Front End Development</footer>
+                        </div>
+                        <div class="about-skill-badge" id="databases-badge">
+                            <img class="hex-badge" src="/assets/img/icons/db-badge.png">
+                            <footer class="text-center">Databases</footer>
+                        </div>
+                        <div class="about-skill-badge" id="git-badge">
+                            <img class="square-badge" id="git-badge-graphic" src="/assets/img/icons/git-badge.png">
+                            <footer class="text-center">Source Control - Git</footer>
+                        </div>
+                        <div class="about-skill-badge" id="backend-dev-badge">
+                            <img id="backend-dev-badge-graphic" class="hex-badge" src="/assets/img/icons/back-end-dev-badge.png">
+                            <footer class="text-center">Back End Development</footer>
+                        </div>
+                        <div class="about-skill-badge" id="ui-design-badge">
+                            <img id="ui-design-badge-graphic" class="square-badge" src="/assets/img/icons/ux-badge.png">
+                            <footer class="text-center">UI Design</footer>
+                        </div>
+                        <div class="about-skill-badge" id="android-badge">
+                            <img id="android-badge-graphic" class="hex-badge" src="/assets/img/icons/android-badge.png">
+                            <footer class="text-center">Android Development</footer>
+                        </div>
+                        <div class="about-skill-badge" id="embedded-badge">
+                            <img class="hex-badge" src="/assets/img/icons/embedded-badge.png">
+                            <footer class="text-center">Embedded Systems</footer>
+                        </div>
+                    </div>
                 </div>
-                <div class="about-skill-badge">
-                    <img class="hex-badge" src="/assets/img/icons/db-badge.png">
-                    <footer class="text-center">Databases</footer>
-                </div>
-                <div class="about-skill-badge">
-                    <img class="square-badge" id="git-badge" src="/assets/img/icons/git-badge.png">
-                    <footer class="text-center">Source Control - Git</footer>
-                </div>
-                <div class="about-skill-badge">
-                    <img class="hex-badge" src="/assets/img/icons/back-end-dev-badge.png">
-                    <footer class="text-center">Back End Development</footer>
-                </div>
-                <div class="about-skill-badge">
-                    <img class="square-badge" src="/assets/img/icons/ux-badge.png">
-                    <footer class="text-center">UI Design</footer>
-                </div>
-                <div class="about-skill-badge">
-                    <img class="hex-badge" src="/assets/img/icons/android-badge.png">
-                    <footer class="text-center">Android Development</footer>
-                </div>
-                <div class="about-skill-badge">
-                    <img class="hex-badge" src="/assets/img/icons/embedded-badge.png">
-                    <footer class="text-center">Embedded Systems</footer>
+                <div class="col-md-5">
+                    <div id="skill-description-container">
+                        <h4 id="skill-title">Front End Development</h4>
+                        <p id="frontend-skill-description-text" class="skill-description-text active">
+
+                        </p>
+                        <p id="databases-skill-description" class="skill-description-text inactive">
+                            I recently completed a course in relational databases, where we learned how to design
+                            databases to model real life scenarios. We covered everything from creating Entity-Relationship
+                            diagrams to translating those same diagrams into a working database. We also learned SQL, and
+                            had to complete a project that incorporated certain complex queries.
+                        </p>
+                        <p id="git-skill-description" class="skill-description-text inactive">
+                            I've been working with Git for several years, both at school and while on co-op. It wasn't
+                            easy to get used to at first, but now I can't immagine life without source control. I use
+                            a combo of the terminal and SourceTree to handled my "git needs", as I prefer using a
+                            GUI for some tasks.
+                        </p>
+                        <p id="backend-skill-description" class="skill-description-text inactive">
+                            Some back end stuff
+                        </p>
+                        <p id="ui-skill-description" class="skill-description-text inactive">
+                            Some ui stuff
+                        </p>
+                        <p id="android-skill-description" class="skill-description-text inactive">
+                            Some android stuff
+                        </p>
+                        <p id="embedded-skill-description" class="skill-description-text inactive">
+                            Some embedded stuff
+                        </p>
+                        <h6 id="related-projects">Related Projects</h6>
+                        <ul id="related-projects-list">
+                        </ul>
+                    </div>
                 </div>
             </div>
         </div>
@@ -79,19 +124,22 @@
     <div class="about-panel-4">
         <div class="container">
             <div class="row">
-                <div class="col-md-6 random-facts-img">
+                <div class="col-sm-6 random-facts-img">
                     <img id="float-plane-ride" src="/assets/img/profile-pics/float-plane-ride.jpg">
-                    <footer>My "I'm totally not freaked out right now" face</footer>
+                    <footer>When you find out the plane you're flying in is older than your Baby Boomer parents</footer>
                 </div>
-                <div class="col-md-6 random-facts-section">
-                    <h2>Random Facts</h2>
+                <div class="col-sm-6 random-facts-section">
+                    <h2>True Story</h2>
                     <ul>
-                        <li>I am a HUGE Star Wars fan (although Lord of the Rings is pretty high up on my list too)</li>
+                        <li>I *heart* Star Wars</li>
                         <li>I was born in Vancouver, British Columbia</li>
-                        <li>I spent half my childhood living on a vineyard</li>
-                        <li>My family owns a small winery in the Okanagan Valley (precursor to the last point)</li>
+                        <li>I grew up on a vineyard (<a href = "http://www.littlestraw.bc.ca/about_us.html">this one</a> to be exact)</li>
                         <li>I spent three years studying French before I switched to Engineering (yes, I may be insane)</li>
                         <li>I used to play hockey and ringette</li>
+                        <li>
+                            I took auto-mechanics in high school and had originally switched to Applied Science
+                            with the intent of becoming a mechanical engineer (before software won me over)
+                        </li>
                         <li>Did I mention that I like Star Wars?</li>
                     </ul>
                 </div>

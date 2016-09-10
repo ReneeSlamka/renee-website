@@ -11,6 +11,17 @@
     display: inline-block;
 }
 
+.top-navbar-underimage {
+    height: 100px;
+    width: 100%;
+    background-image: url("/assets/img/profile-pics/scenic-1-1.JPG");
+    background-repeat: no-repeat;
+    background-position: 0% 0%;
+    background-size: cover;
+    position: absolute;
+    z-index: 1;
+}
+
 
 /* site logo styling */
 #name-text-logo {
@@ -117,7 +128,7 @@
 
 
 @media screen and (min-width:1200px) {
-    .top-navbar-container {
+    .top-navbar-container, .top-navbar-underimage {
         height: 110px;
     }
 
@@ -156,7 +167,7 @@
 }
 
 @media screen and (max-width: 991px) {
-    .top-navbar-container {
+    .top-navbar-container, .top-navbar-underimage {
         height: 84px;
     }
 
@@ -188,8 +199,12 @@
 }
 
 @media screen and (max-width: 767px) {
-    .top-navbar-container {
+    .top-navbar-container, .top-navbar-underimage {
         height: 80px;
+    }
+
+    .top-navbar-container {
+        background-color: rgba(0,0,0,0.93);
     }
 
     #name-text-logo {
