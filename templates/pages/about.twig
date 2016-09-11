@@ -35,23 +35,17 @@
     </div>
     <div class="about-panel-2">
         <div class="container">
-            <div class="renee-attribute-section">
-                <h2>{Ren&eacutee} = </h2> <!-- show a logical "union" of diff things-->
-                <img class="attribute-set-img" src="/assets/img/about-pics/student-set.png">
-                <h2>&#8746</h2>
-                <img class="attribute-set-img" src="/assets/img/about-pics/future-sw-eng-set.png">
-                <h2>&#8746</h2>
-                <img class="attribute-set-img" src="/assets/img/about-pics/artist-set.png">
-                <h2>&#8746</h2>
-                <img class="attribute-set-img" src="/assets/img/about-pics/nerd-set.png">
-            </div>
+            <img id="lg-collage-img" src="/assets/img/lg-word-collage.png">
+            <img id="md-collage-img" src="/assets/img/md-word-collage.png">
+            <img id="sm-collage-img" src="/assets/img/sm-word-collage.png">
+            <img id="xs-collage-img" src="/assets/img/xs-word-collage.png">
         </div>
     </div>
     <div class="about-panel-3">
         <div class="container">
             <div class="row">
                 <h2 class="text-center">Skill Set</h2>
-                <div class="col-md-7">
+                <div class="col-md-7 skill-section-non-mobile">
                     <div class="skill-set-section">
                         <div class="about-skill-badge" id="front-end-dev-badge">
                             <img class="square-badge" src="/assets/img/icons/web-dev-badge.png">
@@ -119,19 +113,53 @@
                     </div>
                 </div>
             </div>
+            <div class="row skill-section-mobile">
+                <div class="col-xs-6 col-xs-offset-3 col-sm-10 col-sm-offset-1">
+                    <div class="skill-section-mobile-carousel">
+                        <div class="about-skill-badge" id="front-end-dev-badge">
+                            <img class="square-badge" src="/assets/img/icons/web-dev-badge.png">
+                            <footer class="text-center">Front End Development</footer>
+                        </div>
+                        <div class="about-skill-badge" id="databases-badge">
+                            <img class="hex-badge" src="/assets/img/icons/db-badge.png">
+                            <footer class="text-center">Databases</footer>
+                        </div>
+                        <div class="about-skill-badge" id="git-badge">
+                            <img class="square-badge" id="git-badge-graphic" src="/assets/img/icons/git-badge.png">
+                            <footer class="text-center">Source Control - Git</footer>
+                        </div>
+                        <div class="about-skill-badge" id="backend-dev-badge">
+                            <img id="backend-dev-badge-graphic" class="hex-badge" src="/assets/img/icons/back-end-dev-badge.png">
+                            <footer class="text-center">Back End Development</footer>
+                        </div>
+                        <div class="about-skill-badge" id="ui-design-badge">
+                            <img id="ui-design-badge-graphic" class="square-badge" src="/assets/img/icons/ux-badge.png">
+                            <footer class="text-center">UI Design</footer>
+                        </div>
+                        <div class="about-skill-badge" id="android-badge">
+                            <img id="android-badge-graphic" class="hex-badge" src="/assets/img/icons/android-badge.png">
+                            <footer class="text-center">Android Development</footer>
+                        </div>
+                        <div class="about-skill-badge" id="embedded-badge">
+                            <img class="hex-badge" src="/assets/img/icons/embedded-badge.png">
+                            <footer class="text-center">Embedded Systems</footer>
+                        </div>
+                    </div>
+                </div>
+            </div>
         </div>
     </div>
     <div class="about-panel-4">
         <div class="container">
             <div class="row">
-                <div class="col-sm-6 random-facts-img">
+                <div class="col-xs-8 col-xs-offset-2 col-sm-6 col-sm-offset-0 random-facts-img">
                     <img id="float-plane-ride" src="/assets/img/profile-pics/float-plane-ride.jpg">
-                    <footer>When you find out the plane you're flying in is older than your Baby Boomer parents</footer>
+                    <footer>When you find out the plane you're flying in is over double your age</footer>
                 </div>
-                <div class="col-sm-6 random-facts-section">
+                <div class="col-xs-10 col-xs-offset-1 col-sm-6 col-sm-offset-0 random-facts-section">
                     <h2>True Story</h2>
                     <ul>
-                        <li>I *heart* Star Wars</li>
+                        <li>I <img src="/assets/img/icons/heart.png"> Star Wars</li>
                         <li>I was born in Vancouver, British Columbia</li>
                         <li>I grew up on a vineyard (<a href = "http://www.littlestraw.bc.ca/about_us.html">this one</a> to be exact)</li>
                         <li>I spent three years studying French before I switched to Engineering (yes, I may be insane)</li>

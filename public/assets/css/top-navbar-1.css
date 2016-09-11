@@ -203,8 +203,12 @@
         height: 80px;
     }
 
+    .top-navbar-underimage {
+        background-size: inherit;
+    }
+
     .top-navbar-container {
-        background-color: rgba(0,0,0,0.93);
+        background-color: rgba(0,0,0,0.85);
     }
 
     #name-text-logo {
