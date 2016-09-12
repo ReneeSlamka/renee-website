@@ -11,26 +11,45 @@
         <div class="contact-bg-white-overlay">
             <div class="container">
                 <div class="row">
-                    <div class="col-md-5 col-md-offset-1 col-sm-6 col-xs-10  contact-info-section">
+                    <div class="col-md-5 col-md-offset-1 col-sm-6 col-sm-offset-0 col-xs-10 col-xs-offset-1 contact-info-section">
                         <h1>Contact Me</h1>
                         <p>
                             Have a project or job opportunity you think I might be interested in?
-                            Shoot me an email!
+                            Shoot me an email through the form below
+                            or message me on <a href="https://ca.linkedin.com/in/renée-slamka-16154285">LinkedIn</a>.
                         </p>
                         <p id="contact-info-sidenote">
                             PS. I'm always looking to
                             practice my French and Italian, so if you happen to speak one or both of
                             those languages, feel free to message me in either. Merci!
                         </p>
-                        <form id="contact-form" class="email" action="mailer.php" method="post">
+                        <ul>
+                            <li>
+                                <a href="https://ca.linkedin.com/in/renée-slamka-16154285"><img src="/assets/img/icons/linkedin-colored.png"></a>
+                                Connect with me on LinkedIn
+                            </li>
+                            <li>
+                                <a href="https://github.com/ReneeSlamka"><img src="/assets/img/icons/github-colored.png"></a>
+                                Check out my Github repositories
+                            </li>
+                            <li>
+                                <a href="https://www.instagram.com/reneeslamka/"><img src="/assets/img/icons/instagram.png"></a>
+                                Follow me on Instagram
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="col-md-5 col-md-offset-1 col-sm-6 col-sm-offset-0 col-xs-10 col-xs-offset-1 contact-form-section">
+                        <form id="contact-form" class="email" action="/submit" method="post">
                             <label>Name:</label><br>
                             <input type="text" name="name" size="40" placeholder="Luke Skywalker"><br>
                             <label>Email:</label><br>
                             <input type="text" name="email" size="40" placeholder="lskywalker@therepublic.com"><br>
+                            <label>Subject:</label><br>
+                            <input type="text" name="subject" size="40" placeholder="Rally the Rebellion"><br>
                             <label>Message:</label><br>
-                            <textarea name="message" rows="6" cols="60" placeholder="Once upon a time, in a galaxy far, far away... "></textarea>
+                            <textarea name="message" rows="6" cols="40" placeholder="Once upon a time, in a galaxy far, far away... "></textarea>
+                            <input id="send-button" class="send" type="submit" value="Send">
                         </form>
-                        <input class="send" type="submit" value="Send">
                     </div>
                 </div>
             </div>

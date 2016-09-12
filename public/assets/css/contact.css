@@ -1,12 +1,14 @@
 .contact-panel-1 {
-    background-image: url("/assets/img/profile-pics/contact-bg-img-edited-copy.jpg");
+    background-image: url("/assets/img/english-bay-beach.jpg");
     background-position: 120% 0%;
     background-repeat: no-repeat;
+    height: 91.1vh;
+    background-size: cover;
 }
 
 .contact-bg-white-overlay {
-    /*background-color: rgba(255,255,255,0.3);*/
-    background: linear-gradient(to right,
+    background-color: rgba(255,255,255,0.75);
+    /*background: linear-gradient(to right,
     rgba(255,255,255,1),
     rgba(255,255,255,1),
     rgba(255,255,255,0.85),
@@ -15,9 +17,9 @@
     rgba(255,255,255,0.5),
     rgba(255,255,255,0.4),
     rgba(255,255,255,0.3),
-    rgba(255,255,255,0.2));
-    padding-top: 70px;
-    padding-bottom: 110px;
+    rgba(255,255,255,0.2));*/
+    padding-top: 145px;
+    height: 100%;
 }
 
 .contact-info-section {
@@ -27,11 +29,29 @@
 }
 
 .contact-info-section h1 {
-    margin-bottom: 30px;
     font-size: 40px;
 }
 
-.contact-info-section input, .contact-info-section textarea {
+.contact-info-section h1 + p {
+    margin-top: 40px;
+}
+
+.contact-info-section ul {
+    list-style-type: none;
+    margin-top: 35px;
+    margin-left: -45px;
+}
+
+.contact-info-section li {
+    margin-bottom: 15px;
+}
+
+.contact-info-section img {
+    height: 44px;
+    margin-right: 10px;
+}
+
+.contact-form-section input, .contact-form-section textarea {
     background-color: rgba(255,255,255,0.5);
     border-width: 1px;
     border-style: solid;
@@ -46,9 +66,15 @@
     margin-top: 30px;
 }
 
-#contact-form {
-    margin-top: 30px;
-    margin-bottom: 30px;
+.contact-form-section {
+    padding-top: 75px;
+}
+
+#send-button {
+    display: block;
+    padding-left: 25px;
+    padding-right: 25px;
+    margin-top: 10px;
 }
 
 #contact-form input {
@@ -99,20 +125,39 @@
         padding-right: 40px;
         font-size: 18px;
     }
+
+    .contact-form-section {
+        padding-left: 35px;
+    }
 }
 
 @media screen and (max-width:859px) {
 
     .contact-info-section {
-        padding-left: 45px;
+        padding-left: 20px;
         padding-right: 5px;
         font-size: 18px;
     }
-}
-@media screen and (max-width:991px) {
 
+    .contact-form-section {
+        padding-left: 50px;
+    }
 }
 
 @media screen and (max-width:767px) {
+    .contact-panel-1 {
+        height: auto;
+    }
 
+    .contact-info-section, .contact-form-section {
+        padding-left: 0px;
+    }
+
+    .contact-form-section {
+        padding-top: 50px;
+    }
+
+    .contact-bg-white-overlay {
+        padding-bottom: 70px;
+    }
 }
