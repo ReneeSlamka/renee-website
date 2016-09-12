@@ -149,6 +149,10 @@
         height: auto;
     }
 
+    .contact-bg-white-overlay {
+        rgba(255,255,255,0.82);
+    }
+
     .contact-info-section, .contact-form-section {
         padding-left: 0px;
     }
