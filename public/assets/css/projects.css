@@ -1,5 +1,5 @@
 #projects-section-1-bg-container {
-    padding-top: 50px;
+    padding-top: 160px;
     padding-bottom: 80px;
 }
 
@@ -11,11 +11,12 @@
 .project-panel {
     display: inline-flex;
     align-items: flex-end;
-    width: 290px;
-    height: 220px;
+    width: 255px;
+    height: 190px;
     background-color: #222222;
     margin-left: 12px;
     margin-right: 12px;
+    margin-bottom: 18px;
     border-radius: 5px;
     -moz-border-radius: 5px;
     -webkit-border-radius: 5px;
@@ -26,8 +27,11 @@
     background-size: cover;
 }
 
-.row-projects {
-    margin-bottom: 16px;
+.project-panel-flexbox {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
 }
 
 .panel-label {
@@ -41,6 +45,30 @@
 .project-panel footer {
     font-size: 18px;
     float: left;
+}
+
+@media screen and (min-width: 1200px) {
+    .project-panel {
+        width: 290px;
+        height: 220px;
+    }
+}
+
+@media screen and (max-width: 767px) {
+    #projects-title-section p {
+        width: 85%;
+        display: block;
+        margin-top: 0px;
+        margin-bottom: 30px;
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+    .project-panel {
+        margin-bottom: 30px;
+        width: 310px;
+        height: 225px;
+    }
 }
 
 /*== Panel Specific Styling ==*/
@@ -78,5 +106,6 @@
 }
 
 #future-projects {
+    border: 1px solid rgba(0,0,0,0.1);
     background-image: url("http://www.allthingsprivatepractice.com/wp-content/uploads/2011/08/Multi-Color-Question-Marks.jpg");
 }
