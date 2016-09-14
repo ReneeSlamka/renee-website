@@ -54,7 +54,7 @@
     }
 }
 
-@media screen and (max-width: 767px) {
+@media (max-width: 767px) {
     #projects-title-section p {
         width: 85%;
         display: block;

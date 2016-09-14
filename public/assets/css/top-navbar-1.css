@@ -166,7 +166,7 @@
 
 }
 
-@media screen and (max-width: 991px) {
+@media (max-width: 991px) {
     .top-navbar-container, .top-navbar-underimage {
         height: 84px;
     }
@@ -198,7 +198,7 @@
     }
 }
 
-@media screen and (max-width: 767px) {
+@media (max-width: 767px) {
     .top-navbar-container, .top-navbar-underimage {
         height: 80px;
     }
@@ -214,7 +214,7 @@
     #name-text-logo {
         line-height: 0.55;
         margin-bottom: 0px;
-        margin-top: 28px;
+        margin-top: 33px;
     }
 
     #mobile-menu-button {
@@ -222,7 +222,7 @@
         height: 48px;
         float: right;
         margin-top: 16px;
-        margin-right: 12px;
+        margin-right: 15px;
     }
 
     #top-navbar-mobile-linebreak {

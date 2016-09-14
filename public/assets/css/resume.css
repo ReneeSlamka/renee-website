@@ -5,13 +5,13 @@
     margin-bottom: -6px;
 }
 
-@media screen and (max-width: 991px) {
+@media (max-width: 991px) {
     #resume-iframe {
         padding-top: 84px;
     }
 }
 
-@media screen and (max-width: 767px) {
+@media (max-width: 767px) {
     #resume-iframe {
         padding-top: 80px;
     }

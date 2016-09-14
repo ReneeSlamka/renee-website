@@ -34,8 +34,13 @@
 /* second summary panel styling and inner elements styling */
 .about-panel-2 {
     background-color: #f4f4f4;
-    padding-top: 100px;
-    padding-bottom: 100px;
+    padding-top: 60px;
+    padding-bottom: 80px;
+}
+
+.about-panel-2 h2 {
+    font-size: 50px;
+    margin-bottom: 60px;
 }
 
 .about-panel-2 img {
@@ -48,7 +53,6 @@
 .about-panel-3 {
     padding-top: 60px;
     padding-bottom: 80px;
-
 }
 
 .skill-section-mobile {
@@ -122,8 +126,21 @@
     font-size: 28px;
 }
 
+.skill-description-text {
+    font-size: 16px;
+}
+
 #related-projects {
-    font-size: 18px;
+    font-size: 20px;
+    margin-top: 30px;
+}
+
+#related-projects-list {
+    margin-left: -22px;
+}
+
+#related-projects-list li {
+    font-size: 16px;
 }
 
 .active {
@@ -153,26 +170,26 @@
 
 .random-facts-section li {
     margin-bottom: 15px;
-    font-size: 16px;
+    font-size: 18px;
 }
 
-.random-facts-img {
-   padding-left: 80px;
+.random-facts-images {
+    padding-left: 7%;
+    padding-top: 22px;
 }
 
-#float-plane-ride {
-    width: 400px;
-    border-radius: 56px;
-    margin-bottom: 12px;
+.random-facts-images img {
+    width: 200px;
+    height: 200px;
+    margin-left: 2px;
+    margin-right: 2px;
+    margin-top: 3px;
+    margin-bottom: 3px;
 }
 
 .random-facts-section img {
     height: 14px;
     margin-bottom: 2px;
-}
-
-.random-facts-img footer {
-    margin-left: 7%;
 }
 
 @media screen and (min-width: 1400px) {
@@ -187,7 +204,12 @@
     }
 
     .random-facts-section {
-        padding-right: 10%;
+        padding-right: 6%;
+        padding-left: 6%;
+    }
+
+    #skill-description-container {
+        height: 490px;
     }
 }
 
@@ -201,7 +223,7 @@
         width: 530px;
     }
 
-    .random-facts-img {
+    .random-facts-images {
         padding-left: 20px;
     }
 }
@@ -238,7 +260,7 @@
     }
 }
 
-@media screen and (max-width: 991px) {
+@media (max-width: 991px) {
     .about-panel-1 {
         padding-top: 130px;
     }
@@ -280,17 +302,25 @@
         margin-bottom: 10px;
     }
 
-    #float-plane-ride {
-        width: 310px;
-        margin-top: 24px;
+    .random-facts-images {
+        padding-top: 24px;
+    }
+
+    .random-facts-images img {
+        width: 150px;
+        height: 150px;
     }
 
     .random-facts-section h2 {
         font-size: 38px;
     }
+
+    .random-facts-section li {
+        font-size: 16px;
+    }
 }
 
-@media screen and (max-width: 991px) and (min-width: 768px) {
+@media (max-width: 991px) and (min-width: 768px) {
     #sm-collage-img {
         display: block;
         width: 100%;
@@ -303,13 +333,9 @@
     #ui-design-badge-graphic {
         margin-left: 16px;
     }
-
-    .random-facts-img footer {
-        width: 80%;
-    }
 }
 
-@media screen and (max-width: 767px) {
+@media (max-width: 767px) {
     .about-portrait {
         display: none;
     }
@@ -339,16 +365,27 @@
 
     .random-facts-section {
         padding-top: 60px;
+        padding-left: 5%;
     }
 
-    #float-plane-ride {
-        display: block;
-        margin: 20px auto;
+    .random-img-container {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+}
+
+@media (max-width: 460px) {
+    .about-portrait-mobile {
+        width: 320px;
     }
 
-    .random-facts-img footer {
-        width: 64%;
-        margin-left: 19%;
+    .intro-section {
+        padding-left: 65px;
+    }
+
+    #skill-description-container {
+        width: 94%;
     }
 }
 

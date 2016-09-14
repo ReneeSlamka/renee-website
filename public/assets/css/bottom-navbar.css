@@ -6,7 +6,7 @@
 
 .copyright-section {
     float: left;
-    padding-left: 20%;
+    padding-left: 18%;
     margin-top: 10px;
     color: white;
     font-size: 16px;
@@ -25,4 +25,34 @@
     height: 22px;
     margin-left: 8px;
     margin-right: 8px;
+}
+
+@media (max-width: 991px) {
+    .copyright-section {
+        padding-left: 10%;
+    }
+
+    .bottom-social-media-links {
+        padding-right: 10%;
+    }
+}
+
+@media (max-width: 660px) {
+    .copyright-section {
+        padding-left: 7%;
+    }
+
+    .bottom-social-media-links {
+        padding-right: 5%;
+    }
+}
+
+@media (max-width: 420px) {
+    .copyright-section {
+        padding-left: 2%;
+    }
+
+    .bottom-social-media-links {
+        padding-right: 0;
+    }
 }
