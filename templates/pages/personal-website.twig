@@ -32,11 +32,11 @@
 {% endblock %}
 
 {% block projectLanguages%}
-    <p>PHP, JavaScript</p>
+    <p>PHP, JavaScript, HTML, CSS</p>
 {% endblock %}
 
 {% block projectTechStack%}
-    <p>Html, CSS, Twig, Bootstrap, Slim, Bower, Composer, Photoshop</p>
+    <p>Twig, Bootstrap, Slim, Bower, Composer, Photoshop</p>
 {% endblock %}
 
 {% block projectDescription %}
@@ -47,7 +47,7 @@
         });
     </script>
     <script src="/vendor/ekko-lightbox/dist/ekko-lightbox.js"></script>
-    <div class="row" id="website-project-conception">
+    <div id="website-project-conception">
         <h2>Project Conception</h2>
         <p>
             As I stated on my home page, two of my previous co-op jobs involved web development.
@@ -60,7 +60,7 @@
             to procrastinate when I wanted a break from doing homework...
         </p>
     </div>
-    <div class="row" id="website-project-planning">
+    <div id="website-project-planning">
         <h2>UI Design and Planning</h2>
         <p>
             I don't often advertise this, but I'm actually a pretty artistic person. I was obsessed with drawing during
@@ -98,7 +98,7 @@
             The hardest part of this entire project: keeping my freakin' eyes open for the camera...
         </footer>
     </div>
-    <div class="row" id="website-tech-stack">
+    <div id="website-tech-stack">
         <h2>Tech Stack</h2>
         <p>
             After my experience as a front-end intern at The Cloud Innovation Center, I was pretty hung up on the
@@ -111,7 +111,7 @@
             particularly complex design and it was perfect for getting the page layout up relatively quickly.
         </p>
     </div>
-    <div class="row" id="website-direction">
+    <div id="website-direction">
         <h2>Future Direction</h2>
         <p>
             I still have a long way to go before I consider this project "finished". Many pages still need more content,
@@ -126,16 +126,16 @@
 {% endblock %}
 
 {% block projectSkills %}
-    <div class="personal-website-skill-badge">
+    <div class="project-skill-badge">
         <img class="square-badge" src="/assets/img/icons/web-dev-badge.png">
         <footer>Front End Development</footer>
     </div>
-    <div class="personal-website-skill-badge">
+    <div class="project-skill-badge">
         <img class="square-badge" id="git-badge" src="/assets/img/icons/git-badge.png">
-        <footer>Source Control - Git</footer>
+        <footer class="text-center">Source Control - Git</footer>
     </div>
-    <div class="personal-website-skill-badge">
-        <img class="square-badge" src="/assets/img/icons/ux-badge.png">
-        <footer>UI Design</footer>
+    <div class="project-skill-badge">
+        <img class="square-badge" id="ui-design-badge" src="/assets/img/icons/ux-badge.png">
+        <footer class="text-center">UI Design</footer>
     </div>
 {% endblock %}

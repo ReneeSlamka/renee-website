@@ -49,29 +49,6 @@
     margin-top: 20px;
 }
 
-.brewmeister-skill-badge {
-    display: inline-block;
-    margin-left: 10px;
-    margin-right: 10px;
-}
-
-.brewmeister-skill-badge footer {
-    font-size: 18px;
-    margin-top: 8px;
-}
-
-.square-badge {
-    width: 150px;
-}
-
-.hex-badge {
-    width: 180px;
-}
-
-#git-badge {
-    height: 152px;
-    width: auto;
-}
 
 /* General styling */
 .brewmeister-section-title {
@@ -87,6 +64,11 @@
 
 /* 1100px - 1199px Styling */
 @media screen and (max-width:1199px) {
+
+    #brewmeister-pic-1 {
+        width: 435px;
+        margin-top: 12px;
+    }
 
     #brewmeister-pic-6 {
         width: 360px;
@@ -105,5 +87,50 @@
 
     .project-description p {
         font-size: 18px;
+    }
+}
+
+@media screen and (max-width: 991px) {
+
+    #brewmeister-pic-6, #brewmeister-pic-7, #brewmeister-pic-8 {
+        width: inherit;
+    }
+
+    #brewmeister-pic-1 {
+        width: 350px;
+        margin-top: 14px;
+        margin-left: 0;
+    }
+
+    section.project-links {
+        margin-right: -5px;
+    }
+}
+
+@media screen and (max-width: 800px) and (min-width: 768px) {
+
+    #brewmeister-pic-1 {
+        width: 335px;
+    }
+}
+
+@media screen and (max-width: 767px) {
+
+    #brewmeister-pic-1 {
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
+        margin-top: 50px;
+        width: 100%;
+    }
+
+    #brewmeister-planning-section, #beermeister-backend-section {
+        padding-top: 40px;
+    }
+}
+
+@media screen and (max-width: 585px) {
+    #brewmeister-pic-6, #brewmeister-pic-7, #brewmeister-pic-8 {
+        width: 100%;
     }
 }

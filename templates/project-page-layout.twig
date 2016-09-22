@@ -6,10 +6,14 @@
         <div class="project-panel-1">
             <div class="container">
                 <div class="row">
-                    <div class="col-md-6 project-details project-page-col">
+                    <div class="col-md-6 col-sm-6 col-xs-12 project-details project-page-col">
                         <header class="project-title">
                             {% block projectTitle %}
                             {% endblock %}
+                            <section class="project-links">
+                                {% block projectLinks %}
+                                {% endblock %}
+                            </section>
                         </header>
                         <hr>
                         <section class="project-header-info">
@@ -26,10 +30,6 @@
                             {% block projectSummary %}
                             {% endblock %}
                         </section>
-                        <section class="project-links">
-                            {% block projectLinks %}
-                            {% endblock %}
-                        </section>
                         <section class="tech-stack">
                             <section class="dev-tool-list">
                                 <span>Languages:</span>
@@ -43,7 +43,7 @@
                             </section>
                         </section>
                     </div>
-                    <div class="col-md-6 project-image project-page-col">
+                    <div class="col-md-6 col-sm-6 col-xs-12 project-image project-page-col">
                         {% block projectImage %}
                         {% endblock %}
                     </div>
@@ -53,7 +53,7 @@
         <div class="project-panel-2">
             <div class="container">
                 <div class="row">
-                    <div class="col-md-10 col-md-offset-1 project-description">
+                    <div class="col-md-10 col-md-offset-1 col-sm-12 project-description">
                         {% block projectDescription %}
                         {% endblock %}
                     </div>

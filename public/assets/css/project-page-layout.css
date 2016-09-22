@@ -18,7 +18,22 @@
     font-size: 48px;
 }
 
-hr {
+.project-links {
+    display: inline-block;
+    float: right;
+    margin-right: 28px;
+}
+
+.project-links img {
+    height: 32px;
+    margin-bottom: 5px;
+}
+
+.project-links a:hover {
+    text-decoration: none;
+}
+
+.project-details hr {
     border: 0px;
     margin-top: 5px;
     clear: both;
@@ -37,34 +52,26 @@ hr {
 
 .project-type {
     float: left;
+    font-size: 16px;
 }
 
 .project-date {
     float: right;
-    margin-right: 50px;
+    margin-right: 35px;
 }
 
 .project-summary {
-    margin-top: 15px;
+    margin-top: 25px;
     font-size: 20px;
 }
 
-.project-links {
-    margin-top: 20px;
-}
-
-.project-links h5 {
-    display: block;
-    margin-bottom: 10px;
-}
-
 .tech-stack {
-    margin-top: 40px;
+    margin-top: 20px;
+    font-size: 16px;
 }
 
 .tech-stack span {
     font-weight: bold;
-    font-size: 16px;
     margin-right: 5px;
 }
 .dev-tool-list p {
@@ -97,11 +104,11 @@ hr {
 
 .project-panel-3 {
     padding-top: 60px;
-    margin-bottom: 120px;
+    padding-bottom: 120px;
 }
 
 .project-skills-gained h1 {
-    margin-bottom: 50px;
+    margin-bottom: 35px;
 }
 
 .badge-container {
@@ -111,16 +118,116 @@ hr {
     justify-content: center;
 }
 
-/*General styling*/
+.project-skill-badge {
+    display: inline-block;
+    margin-left: 10px;
+    margin-right: 10px;
+    margin-top: 25px;
+}
+
+.project-skill-badge footer {
+    font-size: 18px;
+    margin-top: 8px;
+}
+
+.square-badge {
+    width: 150px;
+}
+
+.hex-badge {
+    width: 180px;
+}
+
+#git-badge {
+    height: 152px;
+    width: auto;
+}
+
+#git-badge + footer {
+    margin-top: 10px;
+}
+
+#ui-design-badge {
+    margin-top: 2px;
+}
+
+#ui-design-badge + footer {
+    margin-top: 13px;
+}
+
+#backend-dev-badge + footer {
+    margin-top: 15px;
+}
+
+
+@media screen and (min-width: 992px) {
+
+    .project-details {
+        padding-left: 24px;
+    }
+}
+
+@media screen and (max-width: 1199px) and (min-width: 768px){
+
+    .project-details {
+        padding-right: 24px;
+    }
+}
 
 @media screen and (max-width:1199px) {
 
-    /*.project-page-col {
-        padding-left: 40px;
-        padding-right: 80px;
-    }*/
+    .project-links {
+        margin-right: 4px;
+    }
+
+    .project-date {
+        margin-right: 10px;
+    }
+
+    .project-details hr {
+        width: 98%;
+    }
 }
 
-div.project-image {
+@media screen and (max-width: 991px) {
 
+    .project-panel-1 {
+        padding-top: 150px;
+    }
+
+    .project-panel-2, .project-panel-3 {
+        padding-top: 55px;
+        padding-bottom: 90px;
+    }
+
+    .project-details hr {
+        width: 100%;
+    }
+
+    .project-links, .project-date {
+        margin-right: 0px;
+    }
+
+    .project-title {
+        font-size: 40px;
+    }
+
+    .project-summary {
+        font-size: 18px;
+    }
+}
+
+@media screen and (max-width: 790px) and (min-width: 768px) {
+
+    .project-details {
+        padding-left: 12px;
+        padding-right: 12px;
+    }
+}
+
+@media screen and (max-width: 767px) {
+
+    .project-panel-2, .project-panel-3 {
+        padding-bottom: 70px;
+    }
 }

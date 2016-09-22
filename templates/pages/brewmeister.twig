@@ -12,8 +12,17 @@
     Brewmeister
 {% endblock %}
 
+{% block projectLinks %}
+    <a href="https://github.com/TheSchnoo/Brewmeister">
+        <img src="/assets/img/icons/github-colored.png">
+    </a>
+    <a href="http://brewmeister-frontend.herokuapp.com/">
+        <img src="/assets/img/icons/heroku-icon.png">
+    </a>
+{% endblock %}
+
 {% block projectType %}
-    University Coursework - Introduction to Databases Term Project
+    Introduction to Databases Term Project
 {% endblock %}
 
 {% block projectDate %}
@@ -25,16 +34,13 @@
     and allows them to share ratings and reviews with others.
 {% endblock %}
 
-{% block projectLinks %}
-    <a href="https://github.com/TheSchnoo/Brewmeister">Project Source Code</a>
-{% endblock %}
-
 {% block projectLanguages%}
     <p>Java, JavaScript</p>
 {% endblock %}
 {% block projectTechStack%}
     <p>Spring MVC, JDBC, AngularJS, Bootstrap, MySQL</p>
 {% endblock %}
+
 
 {% block projectImage %}
     <img id="brewmeister-pic-1" src="/assets/img/project-page-pics/brewmeister-profile-pic.jpg"/>
@@ -49,7 +55,7 @@
         });
     </script>
     <script src="/vendor/ekko-lightbox/dist/ekko-lightbox.js"></script>
-    <div class="row" id="brewmeister-conception-section">
+    <div id="brewmeister-conception-section">
         <h2 class="brewmeister-section-title">Project Conception</h2>
         <p>
             My group members and I were tasked with designing an application that fulfilled two
@@ -66,7 +72,7 @@
             was born!
         </p>
     </div>
-    <div class="row" id="brewmeister-planning-section">
+    <div id="brewmeister-planning-section">
         <h2 class="brewmeister-section-title">Project Planning</h2>
         <p>
             The project itself included several planning stage assignments to be completed before we started working
@@ -101,13 +107,7 @@
         </div>
     </div>
     <div class="row" id="brewmeister-front-end-section">
-        <div class="col-md-6">
-            <img id="brewmeister-pic-6" src="/assets/img/project-page-pics/brewmeister-web-controller.png">
-            <footer class="brewmeister-footer">
-                Our web controller to handle incoming HTTP requests from the front end
-            </footer>
-        </div>
-        <div class="col-md-6">
+        <div class="col-md-6 col-md-push-6">
             <h2 class="brewmeister-section-title">Implementation - The Front-End</h2>
             <p>
                 The front-end of our application consisted of a website running off a local python server.
@@ -118,6 +118,12 @@
                 and receiving of data between the front-end and back-end, we created an API document that outlined
                 the expected labelling of the various fields in both the HTTP requests and responses.
             </p>
+        </div>
+        <div class="col-md-6 col-md-pull-6">
+            <img id="brewmeister-pic-6" src="/assets/img/project-page-pics/brewmeister-web-controller.png">
+            <footer class="brewmeister-footer">
+                Our web controller to handle incoming HTTP requests from the front end
+            </footer>
         </div>
     </div>
     <div class="row" id="beermeister-backend-section">
@@ -154,24 +160,24 @@
 {% endblock %}
 
 {% block projectSkills %}
-    <div class="brewmeister-skill-badge">
+    <div class="project-skill-badge">
         <img class="square-badge" src="/assets/img/icons/web-dev-badge.png">
         <footer class="text-center">Front End Development</footer>
     </div>
-    <div class="brewmeister-skill-badge">
+    <div class="project-skill-badge">
         <img class="hex-badge" src="/assets/img/icons/db-badge.png">
         <footer class="text-center">Databases</footer>
     </div>
-    <div class="brewmeister-skill-badge">
+    <div class="project-skill-badge">
         <img class="square-badge" id="git-badge" src="/assets/img/icons/git-badge.png">
         <footer class="text-center">Source Control - Git</footer>
     </div>
-    <div class="brewmeister-skill-badge">
-        <img class="hex-badge" src="/assets/img/icons/back-end-dev-badge.png">
+    <div class="project-skill-badge">
+        <img class="hex-badge" id="backend-dev-badge" src="/assets/img/icons/back-end-dev-badge.png">
         <footer class="text-center">Back End Development</footer>
     </div>
-    <div class="brewmeister-skill-badge">
-        <img class="square-badge" src="/assets/img/icons/ux-badge.png">
+    <div class="project-skill-badge">
+        <img class="square-badge" id="ui-design-badge" src="/assets/img/icons/ux-badge.png">
         <footer class="text-center">UI Design</footer>
     </div>
 {% endblock %}
