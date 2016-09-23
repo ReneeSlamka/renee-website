@@ -1,6 +1,6 @@
 #website-pic-1 {
-    width: 500px;
-    margin-top: 16px;
+    width: 85%;
+    float: right;
 }
 
 #website-project-planning {
@@ -12,10 +12,11 @@
     font-size: 14px;
 }
 
-.website-mockup-gallery {
+#website-mockup-gallery {
     width: 100%;
     display: inline-flex;
     flex-direction: row;
+    flex-wrap: wrap;
     justify-content: space-between;
     padding-left: 10%;
     padding-right: 10%;
@@ -23,7 +24,7 @@
     padding-bottom: 60px;
 }
 
-.website-mockup-gallery img {
+#website-mockup-gallery img {
     height: 150px;
 }
 
@@ -46,19 +47,44 @@
 }
 
 @media screen and (max-width:1199px) {
-    #website-pic-1 {
-        width: 460px;
-    }
-
-
 
     #website-project-planning footer {
         margin-top: 3px;
-        margin-left: 60px;
         font-size: 14px;
     }
 
     .project-description p {
         font-size: 18px;
+    }
+}
+
+@media screen and (max-width: 991px) {
+
+    #website-pic-1 {
+        width: 100%;
+    }
+}
+
+@media screen and (max-width: 767px) {
+
+    #website-pic-5 {
+        width: 100%;
+    }
+
+    #website-mockup-gallery {
+        padding-left: 5%;
+        padding-right: 5%;
+        justify-content: center;
+        padding-top: 30px;
+    }
+
+    #website-mockup-gallery img {
+        margin-left: 10px;
+        margin-right: 10px;
+        height: 200px;
+    }
+
+    #website-mockup-gallery img {
+        margin-top: 30px;
     }
 }

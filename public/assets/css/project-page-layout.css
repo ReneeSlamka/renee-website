@@ -9,6 +9,10 @@
     padding-bottom: 90px;
 }
 
+.project-image-col {
+    padding-top: 16px;
+}
+
 .project-details {
     display: flex;
     flex-direction: column;
@@ -215,6 +219,10 @@
     .project-summary {
         font-size: 18px;
     }
+
+    .project-image-col {
+        padding-top: 10px;
+    }
 }
 
 @media screen and (max-width: 790px) and (min-width: 768px) {
@@ -227,7 +235,16 @@
 
 @media screen and (max-width: 767px) {
 
+    .project-panel-1 {
+        padding-top: 130px;
+        padding-bottom: 70px;
+    }
+
     .project-panel-2, .project-panel-3 {
         padding-bottom: 70px;
+    }
+
+    .project-image-col {
+        padding-top: 50px;
     }
 }
