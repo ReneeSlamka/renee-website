@@ -7,7 +7,7 @@
 {% endblock %}
 
 {% block js %}
-    <script src="/vendor/isotope/dist/isotope.min.js"></script>
+    <script src="/vendor/isotope/js-min/isotope.pkgd.min.js"></script>
     <script type="text/javascript" src="/assets/js/isotope-project-grid.js"></script>
 {% endblock %}
 
@@ -18,8 +18,14 @@
             <div id="projects-title-section" class="row text-center">
                 <p>Some things I've worked on at school and in my spare time</p>
             </div>
+            <div id="panel-filter" class="row text-center button-group filter-button-group">
+                <button class="button" id="show-all-filter" data-filter=".*">Show All</button>
+                <button class="button" id="personal-projects-filter" data-filter=".project">Personal Projects</button>
+                <button class="button" id="school-projects-filter" data-filter=".coursework">School Projects</button>
+                <button class="button" id="courses-filter" data-filter=".course">Courses</button>
+            </div>
             <div class="grid">
-                <div class="grid-item">
+                <div class="grid-item project">
                     <a href="/space-invaders">
                         <div class="project-panel" id="space-invaders">
                             <section class="panel-label">
@@ -28,7 +34,7 @@
                         </div>
                     </a>
                 </div>
-                <div class="grid-item">
+                <div class="grid-item project coursework">
                     <a href="/wireless-audio-streaming">
                         <div class="project-panel" id="wireless-audio-streaming">
                             <section class="panel-label">
@@ -38,7 +44,7 @@
                     </a>
                 </div>
                 <div class="grid-item">
-                    <a href="/cpen-431">
+                    <a href="/cpen-431 course">
                         <div class="project-panel" id="cpen-431">
                             <section class="panel-label">
                                 <footer>CPEN 431 - Distributed Systems</footer>
@@ -46,7 +52,7 @@
                         </div>
                     </a>
                 </div>
-                <div class="grid-item">
+                <div class="grid-item project">
                     <a href="/student-budgeting-app">
                         <div class="project-panel" id="student-budgeting-app">
                             <section class="panel-label">
@@ -55,7 +61,7 @@
                         </div>
                     </a>
                 </div>
-                <div class="grid-item">
+                <div class="grid-item course">
                     <a href="/cpen-400">
                         <div class="project-panel" id="cpen-400">
                             <section class="panel-label">
@@ -64,7 +70,7 @@
                         </div>
                     </a>
                 </div>
-                <div class="grid-item">
+                <div class="grid-item project coursework">
                     <a href="/brewmeister">
                         <div class="project-panel" id="brewmeister">
                             <section class="panel-label">
@@ -73,7 +79,7 @@
                         </div>
                     </a>
                 </div>
-                <div class="grid-item">
+                <div class="grid-item project">
                     <a href="/personal-website">
                         <div class="project-panel" id="website">
                             <section class="panel-label">
@@ -82,7 +88,7 @@
                         </div>
                     </a>
                 </div>
-                <div class="grid-item">
+                <div class="grid-item course">
                     <a href="/cpsc-321">
                         <div class="project-panel" id="cpsc-320">
                             <section class="panel-label">
@@ -91,7 +97,7 @@
                         </div>
                     </a>
                 </div>
-                <div class="grid-item">
+                <div class="grid-item course">
                     <a href="/cpen-331">
                         <div class="project-panel" id="cpen-331">
                             <section class="panel-label">
@@ -100,8 +106,8 @@
                         </div>
                     </a>
                 </div>
-                <div class="grid-item">
-                    <a>
+                <div class="grid-item project">
+                    <a href="/blog-board">
                         <div class="project-panel" id="blog-board-panel">
                             <section class="panel-label">
                                 <footer>Blog Board - Coming soon!</footer>
@@ -109,8 +115,8 @@
                         </div>
                     </a>
                 </div>
-                <div class="grid-item">
-                    <a>
+                <div class="grid-item project">
+                    <a href="/falling-myo">
                         <div class="project-panel" id="falling-myo">
                             <section class="panel-label">
                                 <footer>Smart Fall Detector - Coming Soon!</footer>
