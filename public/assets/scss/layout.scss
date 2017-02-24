@@ -1,0 +1,66 @@
+@import "variables";
+
+
+#renee-site {
+  a {
+    color: white;
+    text-decoration: none;
+  }
+
+  .top-navbar {
+    padding-top: 10px;
+    background-color: $transparent-black;
+
+    @media screen and (min-width: 1199px)  {
+      padding-top: 15px;
+    }
+
+    .site-links-section {
+      margin-top: 28px;
+      .nav-item {
+        margin: {
+          left: 70px;
+        }
+        font: {
+          family: Lato, sans-serif;
+          size: 18px;
+          weight: 300;
+        }
+        a {
+          position: relative;
+
+          &:after {
+            content: '';
+            position: absolute;
+            bottom: 0;
+            left: 0;
+            width: 0%;
+            border-bottom: 2px solid $forget-me-not-blue;
+            transition: 0.4s;
+          }
+          &:hover:after {
+            width: 100%;
+          }
+        }
+      }
+    }
+
+    #navbar-text-logo {
+      @media screen and (min-width: 1199px)  {
+        font-size: 90px;
+      }
+      font: {
+        family:"Always Forever Bold", sans-serif;
+        size: 86px;
+      }
+      line-height: 1.1;
+      padding-top: 0px;
+      padding-bottom: 0px;
+      margin-bottom: -18px;
+
+      &:hover {
+        color: $sky-blue;
+      }
+    }
+  }
+}

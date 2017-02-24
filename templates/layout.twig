@@ -21,7 +21,8 @@
         <link rel="stylesheet" href="/vendor/bootstrap/dist/css/bootstrap.min.css">
         <link rel="stylesheet" href="/vendor/slick-carousel/slick/slick.scss">
         <script type="text/javascript" src="/vendor/slick-carousel/slick/slick.js"></script>
-        <link rel="stylesheet" href="/assets/css/top-navbar-1.css" />
+        <!--link rel="stylesheet" href="/assets/css/top-navbar-1.css" /-->
+        <link rel="stylesheet" href="/assets/css/layout.css" />
         <link rel="stylesheet" href="/assets/css/bottom-navbar.css" />
         <link rel="stylesheet" href="/assets/css/site-wide.css" />
         <link rel="stylesheet" type="text/css" href="vendor/slick-carousel/slick/slick-theme.scss"/>
@@ -33,8 +34,7 @@
         {% endblock %}
     </head>
     <body id="renee-site">
-    <?php echo $webroot?>
-    {%  include 'top-navbar.twig' %}
+    {%  include 'top-navbar-v2.twig' %}
 
         {% block js %}
         {% endblock %}
