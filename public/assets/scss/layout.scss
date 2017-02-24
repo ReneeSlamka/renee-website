@@ -8,6 +8,13 @@
   }
 
   .top-navbar {
+
+    .container {
+      @media screen and (max-width: 991px) {
+        width: 100%;
+      }
+    }
+
     padding-top: 10px;
     background-color: $transparent-black;
 
@@ -15,11 +22,24 @@
       padding-top: 15px;
     }
 
+    .navbar-toggler {
+      top: 9px;
+      right: 0px!important;
+    }
+
+    #mobile-menu-button {
+      height: 40px;
+    }
+
     .site-links-section {
       margin-top: 28px;
       .nav-item {
-        margin: {
-          left: 70px;
+        margin-left: 70px;
+        @media screen and (max-width: 991px) {
+          margin-left: 60px;
+        }
+        @media screen and (max-width: 800px) {
+          margin-left: 50px;
         }
         font: {
           family: Lato, sans-serif;
@@ -48,6 +68,14 @@
       @media screen and (min-width: 1199px)  {
         font-size: 90px;
       }
+      @media screen and (max-width: 991px) {
+        font-size: 74px;
+      }
+
+      @media screen and (max-width: 767px) {
+        padding-bottom: 5px;
+        margin-left: 8px;
+      }
       font: {
         family:"Always Forever Bold", sans-serif;
         size: 86px;
@@ -56,6 +84,7 @@
       padding-top: 0px;
       padding-bottom: 0px;
       margin-bottom: -18px;
+      margin-right: 0px;
 
       &:hover {
         color: $sky-blue;
