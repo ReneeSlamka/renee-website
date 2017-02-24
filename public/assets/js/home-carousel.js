@@ -12,6 +12,8 @@ $(document).ready(function(){
     $('.home-page-carousel').slick({
         infinite: true,
         slidesToShow: numSlides,
-        slidesToScroll: numSlides
+        slidesToScroll: numSlides,
+        prevArrow:"<img class='a-left control-c prev slick-prev' src='/assets/img/icons/paging-prev-arrow.png'>",
+        nextArrow:"<img class='a-right control-c next slick-next' src='/assets/img/icons/paging-next-arrow.png'>"
     });
 });

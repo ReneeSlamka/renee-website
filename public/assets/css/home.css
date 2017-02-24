@@ -210,8 +210,9 @@
 @media (max-width:767px) {
     #homepage-section-1-bg-container {
         background-image: url("../img/home-page-img.jpg");
-        background-position: 68% 0%;
+        background-position: 68% 42%;
         padding-top: 120px;
+        background-size: 1445px;
     }
 
     #homepage-section-2-bg-container {
@@ -219,8 +220,8 @@
     }
 
     .home-text-content {
-        margin-left: 22%;
-        margin-right: 22%;
+        margin-left: 15%;
+        margin-right: 14%;
         margin-top: 8%;
     }
 
@@ -230,7 +231,7 @@
     }
 
     .home-text-content p {
-        font-size: 20px;
+        font-size: 22px;
     }
 
     .project-panel {
