@@ -1,0 +1,111 @@
+#projects-section-1-bg-container {
+    padding-top: 160px;
+    padding-bottom: 80px;
+}
+
+#projects-title-section {
+    padding-bottom: 30px;
+    font-size: 22px;
+}
+
+.project-panel {
+    display: inline-flex;
+    align-items: flex-end;
+    width: 255px;
+    height: 190px;
+    background-color: #222222;
+    margin-left: 12px;
+    margin-right: 12px;
+    margin-bottom: 18px;
+    border-radius: 5px;
+    -moz-border-radius: 5px;
+    -webkit-border-radius: 5px;
+    box-shadow: 3px 3px 5px rgba(0,0,0,0.3);
+    -moz-box-shadow: 3px 3px 5px rgba(0,0,0,0.3);
+    -webkit-box-shadow: 3px 3px 5px rgba(0,0,0,0.3);
+    overflow: hidden;
+    background-size: cover;
+}
+
+.project-panel-flexbox {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.panel-label {
+    padding-left: 15px;
+    padding-top: 10px;
+    padding-bottom: 15px;
+    width: 100%;
+    background-color: rgba(255,255,255,0.7);
+}
+
+.project-panel footer {
+    font-size: 18px;
+    float: left;
+}
+
+@media screen and (min-width: 1200px) {
+    .project-panel {
+        width: 290px;
+        height: 220px;
+    }
+}
+
+@media (max-width: 767px) {
+    #projects-title-section p {
+        width: 85%;
+        display: block;
+        margin-top: 0px;
+        margin-bottom: 30px;
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+    .project-panel {
+        margin-bottom: 30px;
+        width: 310px;
+        height: 225px;
+    }
+}
+
+/*== Panel Specific Styling ==*/
+
+#blog-board-panel {
+    background-image: url("https://static.pexels.com/photos/2752/city-sunny-people-street.jpg");
+}
+
+#falling-myo {
+    background-image: url("/assets/img/project-preview-pics/falling-myo.jpg");
+}
+
+#website {
+    background-image: url("/assets/img/project-preview-pics/website-screenshot.png");
+}
+
+#project-euler {
+    background-image: url("https://i.ytimg.com/vi/VIADThf8gjE/maxresdefault.jpg");
+}
+
+#tether-car {
+    background-image: url("/assets/img/project-preview-pics/tether-car.jpg");
+}
+
+#telephone-app {
+    background-image: url("/assets/img/project-preview-pics/telephone-app.png");
+}
+
+#heart-monitor {
+    background-image: url("/assets/img/project-preview-pics/heart-monitor-preview.jpg");;
+}
+
+#brewmeister {
+    background-image: url("/assets/img/project-page-pics/brewmeister-profile-pic.jpg");
+}
+
+#future-projects {
+    border: 1px solid rgba(0,0,0,0.1);
+    background-image: url("http://www.allthingsprivatepractice.com/wp-content/uploads/2011/08/Multi-Color-Question-Marks.jpg");
+}

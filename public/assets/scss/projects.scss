@@ -1,0 +1,100 @@
+@import "variables";
+
+#projects-section-1-bg-container {
+  padding-top: 160px;
+  padding-bottom: 80px;
+
+  #projects-title-section {
+    padding-bottom: 30px;
+
+    p {
+      width: 100%;
+      font-size: 22px;
+    }
+  }
+
+  .grid {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    align-content: center;
+    justify-content: center;
+
+    .grid-item {
+      .project-panel {
+        width: 255px;
+        height: 190px;
+        background-color: #222222;
+        margin-left: 12px;
+        margin-right: 12px;
+        margin-bottom: 18px;
+        border-radius: 5px;
+        -moz-border-radius: 5px;
+        -webkit-border-radius: 5px;
+        box-shadow: 3px 3px 5px rgba(0,0,0,0.3);
+        -moz-box-shadow: 3px 3px 5px rgba(0,0,0,0.3);
+        -webkit-box-shadow: 3px 3px 5px rgba(0,0,0,0.3);
+        overflow: hidden;
+        background-size: cover;
+      }
+      .panel-label {
+        padding-left: 15px;
+        padding-top: 10px;
+        padding-bottom: 15px;
+        width: 100%;
+        background-color: rgba(255,255,255,0.7);
+      }
+    }
+  }
+
+  #space-invaders {
+    background-image: url("http://wallpapercave.com/wp/LkgeCxr.png");
+  }
+
+  #wireless-audio-streaming {
+    border: 1px solid rgba(0,0,0,0.1);
+    background-image: url("http://files.linuxgizmos.com/seeed_beaglebonegreen2.jpg");
+  }
+
+  #cpen-431 {
+    background-image: url("http://www.codeguru.com/images/article/18159/sql1.jpg");
+  }
+
+  #cpen-400 {
+    border: 1px solid rgba(0,0,0,0.1);
+    background-image: url("https://www.oxfordwebapps.co.uk/sites/all/themes/astrum/images/web-application-development.png");
+  }
+
+  #student-budgeting-app {
+    background-image: url("http://static.wixstatic.com/media/d60c28_6bd0ab8fd9ec475d93b33060ddcd0e0b.jpg");
+  }
+
+  #blog-board-panel {
+    background-image: url("https://static.pexels.com/photos/2752/city-sunny-people-street.jpg");
+  }
+
+  #falling-myo {
+    background-image: url("/assets/img/project-preview-pics/falling-myo.jpg");
+  }
+
+  #website {
+    background-image: url("/assets/img/project-preview-pics/website-screenshot.png");
+  }
+
+  #telephone-app {
+    background-image: url("/assets/img/project-preview-pics/telephone-app.png");
+  }
+
+  #brewmeister {
+    background-image: url("/assets/img/project-page-pics/brewmeister-profile-pic.jpg");
+  }
+
+  #cpen-331 {
+    border: 1px solid rgba(0,0,0,0.1);
+    background-image: url("https://blog.digilentinc.com/wp-content/uploads/2015/05/1280px-Kernel_Layout.svg_.png");
+  }
+
+  #cpsc-320 {
+    background-image: url("https://3c1703fe8d.site.internapcdn.net/newman/csz/news/800/2015/systemthatre.jpg");
+  }
+}

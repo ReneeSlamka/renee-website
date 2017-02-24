@@ -22,7 +22,8 @@
     "ekko-lightbox": "^5.1.1",
     "slick-carousel": "^1.6.0",
     "bootstrap": "^3.3.7",
-    "tether": "^1.4.0"
+    "tether": "^1.4.0",
+    "isotope": "^3.0.2"
   },
   "resolutions": {
     "ekko-lightbox": "^5.1.1",
