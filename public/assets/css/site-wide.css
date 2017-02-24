@@ -5,15 +5,15 @@ body#renee-site {
 
 @font-face {
     font-family: "BEYONDSKTRIAL";
-    src: url("/assets/fonts/billy-argel_beyond-sky/BEYONDSKTRIAL.ttf");
+    src: url("../fonts/billy-argel_beyond-sky/BEYONDSKTRIAL.ttf");
 }
 
 @font-face {
     font-family: "Always Forever";
-    src: url("/assets/fonts/brittney-murphy-design_always-forever/AlwaysForever.ttf");
+    src: url("../fonts/brittney-murphy-design_always-forever/AlwaysForever.ttf");
 }
 
 @font-face {
     font-family: "Always Forever Bold";
-    src: url("/assets/fonts/brittney-murphy-design_always-forever/AlwaysForeverBold.ttf");
+    src: url("../fonts/brittney-murphy-design_always-forever/AlwaysForeverBold.ttf");
 }

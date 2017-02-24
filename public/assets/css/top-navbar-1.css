@@ -14,7 +14,7 @@
 .top-navbar-underimage {
     height: 100px;
     width: 100%;
-    background-image: url("/assets/img/profile-pics/scenic-1-1.JPG");
+    background-image: url("../img/profile-pics/scenic-1-1.JPG");
     background-repeat: no-repeat;
     background-position: 0% 0%;
     background-size: cover;

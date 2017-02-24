@@ -19,6 +19,13 @@
     "tests"
   ],
   "dependencies": {
-    "ekko-lightbox": "^4.0.1"
+    "ekko-lightbox": "^5.1.1",
+    "slick-carousel": "^1.6.0",
+    "bootstrap": "^3.3.7",
+    "tether": "^1.4.0"
+  },
+  "resolutions": {
+    "ekko-lightbox": "^5.1.1",
+    "bootstrap": ">= 4.0.0-alpha.3"
   }
 }

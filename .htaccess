@@ -1,12 +1,15 @@
-DirectoryIndex index.php
-AddType application/x-httpd-php55 .php
-
 <IfModule mod_rewrite.c>
-RewriteEngine on
-RewriteBase /
-RewriteCond %{REQUEST_URI} !public/
-RewriteRule (.*) /public/$1 [L]
-RewriteCond %{REQUEST_FILENAME} !-f
+<IfModule mod_negotiation.c>
+    Options -MultiViews
+</IfModule>
+
+RewriteEngine On
+
+# Redirect Trailing Slashes...
+RewriteRule ^(.*)/$ /$1 [L,R=301]
+
+# Handle Front Controller...
 RewriteCond %{REQUEST_FILENAME} !-d
-RewriteRule . /index.php [QSA,L]
+RewriteCond %{REQUEST_FILENAME} !-f
+RewriteRule ^ index.php [QSA,L]
 </IfModule>

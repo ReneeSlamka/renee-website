@@ -1,5 +1,5 @@
 #homepage-section-1-bg-container{
-    background-image: url("/assets/img/profile-pics/scenic-1-1.JPG");
+    background-image: url("../img/profile-pics/scenic-1-1.JPG");
     background-repeat: no-repeat;
     background-position: 0% 18%;
     height: 100vh;
@@ -86,11 +86,11 @@
 }
 
 #brewmeister {
-    background-image: url("/assets/img/project-page-pics/brewmeister-profile-pic.jpg");
+    background-image: url("../img/project-page-pics/brewmeister-profile-pic.jpg");
 }
 
 #website {
-    background-image: url("/assets/img/project-preview-pics/website-screenshot.png");
+    background-image: url("../img/project-preview-pics/website-screenshot.png");
 }
 
 #blog-board-panel {
@@ -209,7 +209,7 @@
 
 @media (max-width:767px) {
     #homepage-section-1-bg-container {
-        background-image: url("/assets/img/home-page-img.jpg");
+        background-image: url("../img/home-page-img.jpg");
         background-position: 68% 0%;
         padding-top: 120px;
     }
@@ -293,11 +293,11 @@
 }
 
 #falling-myo {
-    background-image: url("/assets/img/project-preview-pics/falling-myo.jpg");
+    background-image: url("../img/project-preview-pics/falling-myo.jpg");
 }
 
 #website {
-    background-image: url("/assets/img/project-preview-pics/website-screenshot.png");
+    background-image: url("../img/project-preview-pics/website-screenshot.png");
 }
 
 #project-euler {
@@ -305,9 +305,9 @@
 }
 
 #tether-car {
-    background-image: url("/assets/img/project-preview-pics/tether-car.jpg");
+    background-image: url("../img/project-preview-pics/tether-car.jpg");
 }
 
 #telephone-app {
-    background-image: url("/assets/img/project-preview-pics/telephone-app.png");
+    background-image: url("../img/project-preview-pics/telephone-app.png");
 }
