@@ -8,7 +8,6 @@
   }
 
   .top-navbar {
-
     .container {
       @media screen and (max-width: 991px) {
         width: 100%;
@@ -18,21 +17,47 @@
     padding-top: 10px;
     background-color: $transparent-black;
 
+    #topNavToggleBlock {
+      width: 100%;
+      @media screen and (max-width: 767px) {
+        display: none;
+      }
+    }
+
     @media screen and (min-width: 1199px)  {
       padding-top: 15px;
     }
 
-    .navbar-toggler {
-      top: 9px;
-      right: 0px!important;
+    #mobile-menu-button {
+      @media screen and (min-width: 768px) {
+        display: none;
+      }
+      float: right;
+      height: 40px;
+      margin-top: 14px;
+      margin-right: 10px;
     }
 
-    #mobile-menu-button {
-      height: 40px;
+    #top-navbar-mobile-linebreak {
+      display: none;
+      width: 100%;
+      border-width: 1px;
+      background-color: white;
+      margin-top: 10px;
+      margin-bottom: 10px;
+      opacity: 0.8;
     }
 
     .site-links-section {
       margin-top: 28px;
+
+      @media screen and (max-width: 767px) {
+        margin-top: 5px;
+        margin-bottom: 20px;
+        margin-right: 10px;
+        display: flex;
+      }
+
       .nav-item {
         margin-left: 70px;
         @media screen and (max-width: 991px) {
@@ -41,6 +66,11 @@
         @media screen and (max-width: 800px) {
           margin-left: 50px;
         }
+        @media screen and (max-width: 767px) {
+          margin-left: 5px;
+          margin-top: 10px;
+        }
+
         font: {
           family: Lato, sans-serif;
           size: 18px;
@@ -56,6 +86,9 @@
             width: 0%;
             border-bottom: 2px solid $forget-me-not-blue;
             transition: 0.4s;
+            @media screen and (max-width: 767px) {
+              bottom: 3px;
+            }
           }
           &:hover:after {
             width: 100%;
