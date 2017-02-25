@@ -56,6 +56,9 @@ $app->get('/contact', function () use ($app) {
 
 
 /*== Project Page Links ==*/
+$app->get('/space-invaders', function () use ($app) {
+    $app->render('/pages/space-invaders.twig');
+});
 
 $app->get('/blog-board', function () use ($app) {
     $app->render('/pages/blog-board.twig');
@@ -67,10 +70,6 @@ $app->get('/falling-myo', function () use ($app) {
 
 $app->get('/personal-website', function () use ($app) {
     $app->render('/pages/personal-website.twig');
-});
-
-$app->get('/project-euler', function () use ($app) {
-    $app->render('/pages/project-euler.twig');
 });
 
 $app->get('/tether-car', function () use ($app) {

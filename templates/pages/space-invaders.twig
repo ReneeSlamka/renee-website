@@ -1,0 +1,88 @@
+{% extends 'project-page-layout.twig' %}
+
+{% block title %}Ren&eacutee Slamka | Project Euler{% endblock %}
+
+{% block css %}
+    <link rel="stylesheet" href="/assets/css/project-page-layout.css"/>
+    <link rel="stylesheet" href="/assets/css/space-invaders.css"/>
+{% endblock %}
+
+{% block projectTitle %}
+    Space Invaders
+{% endblock %}
+
+{% block projectType %}
+    Personal Project
+{% endblock %}
+
+{% block projectDate %}
+    November - present
+{% endblock %}
+
+{% block projectSummary %}
+    A vanilla JS implementation of the classic arcade game, Space Invaders.
+    Allows the users to replace the default images with customer ones, like,
+    I don't know, photos of politicians that you're not a huge fan of.
+
+{% endblock %}
+
+{% block projectLinks %}
+    <a href="https://github.com/ReneeSlamka/space-invaders">
+        <img src="/assets/img/icons/github-colored.png">
+    </a>
+{% endblock %}
+
+{% block projectLanguages%}
+    <p>JavaScript</p>
+{% endblock %}
+{% block projectTechStack%}
+    <p>Bootstrap</p>
+{% endblock %}
+
+{% block projectImage %}
+    <img id="blog-board-individual-img" src="/assets/img/project-page-pics/space-invaders-screenshot.png">
+{% endblock %}
+
+
+{% block projectDescription %}
+    <div id="objective-section">
+        <h2 class="section-title">Objective</h2>
+        <p>
+            After learning about the JavaScript language in depth through a recent web-app development course, I decided
+            to create a simple game to practice my "vanilla" JS and learn about commonly used design patterns. As someone
+            who grew up playing arcade games on my family's DOS computer, Space Invaders seemed like a fitting choice.
+            The end goal was to implement all common features of the game (multiple levels, high score, etc), with the
+            bonus of being able to customize the setup by choosing the pictures for each onscreen character. If
+            you're wondering where the inspiration for that came from, I started development on this shortly after the
+            US election...
+        </p>
+    </div>
+    <div id="implementation-section">
+        <h2 class="section-title">Implementation</h2>
+        <p>
+            Probably the most valuable aspect of JavaScript that I learned through my web development course was closures.
+            I'm only partially exaggerating when I say they opened up a whole new world of JS that I had never used.
+            Closures were the key to a lot of design patterns I checked out, and the bread and butter of the module revealing
+            pattern I ended up using for this project (more on that <a href="">here</a>.
+        </p>
+        <p>
+            Presently the game has most key features except for multi level play. I also plan to connect the game to
+            a Mongo DB on Heroku so players can track their high scores. 
+        </p>
+    </div>
+{% endblock %}
+
+{% block projectSkills %}
+    <div class="project-skill-badge">
+        <img class="square-badge" src="/assets/img/icons/web-dev-badge.png">
+        <footer class="text-center">Front End Development</footer>
+    </div>
+    <div class="project-skill-badge">
+        <img class="square-badge" id="git-badge" src="/assets/img/icons/git-badge.png">
+        <footer class="text-center">Source Control - Git</footer>
+    </div>
+    <div class="project-skill-badge">
+        <img class="square-badge" id="ui-design-badge" src="/assets/img/icons/ux-badge.png">
+        <footer class="text-center">UI Design</footer>
+    </div>
+{% endblock %}
