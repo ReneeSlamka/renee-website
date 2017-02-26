@@ -1,10 +1,10 @@
 {% extends 'project-page-layout.twig' %}
 
-{% block title %}Ren&eacutee Slamka | Project Euler{% endblock %}
+{% block title %}Ren&eacutee Slamka | Space Invaders{% endblock %}
 
 {% block css %}
-    <link rel="stylesheet" href="/assets/css/project-page-layout.css"/>
     <link rel="stylesheet" href="/assets/css/space-invaders.css"/>
+    <link rel="stylesheet" href="/assets/css/project-page.css"/>
 {% endblock %}
 
 {% block projectTitle %}
@@ -40,7 +40,7 @@
 {% endblock %}
 
 {% block projectImage %}
-    <img id="blog-board-individual-img" src="/assets/img/project-page-pics/space-invaders-screenshot.png">
+    <img id="blog-board-individual-img" class="project-main-img" src="/assets/img/project-page-pics/space-invaders-screenshot.png">
 {% endblock %}
 
 
@@ -57,7 +57,7 @@
             US election...
         </p>
     </div>
-    <div id="implementation-section">
+    <div id="implementation-section" class="description-section">
         <h2 class="section-title">Implementation</h2>
         <p>
             Probably the most valuable aspect of JavaScript that I learned through my web development course was closures.

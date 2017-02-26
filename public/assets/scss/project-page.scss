@@ -1,0 +1,238 @@
+.project-panel-1 {
+  padding-top: 170px;
+  padding-bottom: 90px;
+
+  @media screen and (max-width: 991px) {
+    padding-top: 150px;
+  }
+
+  @media screen and (max-width: 767px) {
+    padding-top: 130px;
+    padding-bottom: 70px;
+  }
+
+  .project-details-col {
+    display: flex;
+    flex-direction: column;
+
+    @media screen and (min-width: 992px) {
+      padding-left: 24px;
+    }
+    @media screen and (max-width: 1199px) and (min-width: 768px){
+      padding-right: 24px;
+    }
+
+    @media screen and (max-width: 790px) and (min-width: 768px) {
+      padding-left: 12px;
+      padding-right: 12px;
+    }
+
+    hr {
+      border: 0px;
+      margin-top: 5px;
+      clear: both;
+      display: block;
+      width: 94%;
+      background-color: rgba(0,0,0,0.5);
+      height: 1px;
+      text-align: left;
+      margin-left: 0px;
+
+      @media screen and (max-width:1199px) {
+        width: 98%;
+      }
+
+      @media screen and (max-width: 991px) {
+        width: 100%;
+      }
+    }
+
+    .project-title {
+      font-size: 48px;
+
+      @media screen and (max-width: 991px) {
+        font-size: 40px;
+      }
+
+      .project-links {
+        display: inline-block;
+        float: right;
+        margin-right: 28px;
+
+        @media screen and (max-width:1199px) {
+          margin-right: 4px;
+        }
+
+        @media screen and (max-width: 991px) {
+          margin-right: 0px;
+        }
+
+        img {
+          height: 32px;
+          margin-bottom: 5px;
+        }
+
+        a:hover {
+          text-decoration: none;
+        }
+      }
+    }
+
+    .project-header-info {
+      .project-type, .project-date {
+        display: inline-block;
+        margin-top: 0;
+      }
+
+      .project-type {
+        float: left;
+        font-size: 16px;
+      }
+
+      .project-date {
+        float: right;
+        margin-right: 35px;
+
+        @media screen and (max-width:1199px) {
+          margin-right: 10px;
+        }
+        @media screen and (max-width: 991px) {
+          margin-right: 0px;
+        }
+      }
+    }
+
+    .project-summary {
+      margin-top: 25px;
+      font-size: 20px;
+      @media screen and (max-width: 991px) {
+        font-size: 18px;
+      }
+    }
+
+    .tech-stack {
+      margin-top: 20px;
+      font-size: 16px;
+
+      span {
+        font-weight: bold;
+        margin-right: 5px;
+      }
+
+      .dev-tool-list p {
+        font-weight: 400;
+        display: inline-block;
+      }
+    }
+  }
+  .project-image-col {
+    padding-top: 16px;
+    padding-right: 24px;
+    padding-right: 24px;
+    @media screen and (max-width: 991px) {
+      padding-top: 10px;
+    }
+    @media screen and (max-width: 767px) {
+      padding-top: 50px;
+    }
+    img {
+      float: right;
+      width: 500px;
+    }
+  }
+}
+
+.project-panel-2 {
+  padding-top: 60px;
+  padding-bottom: 90px;
+  background-color: #f4f4f4;
+
+  @media screen and (max-width: 991px) {
+    padding-top: 55px;
+    padding-bottom: 90px;
+  }
+
+  @media screen and (max-width: 767px) {
+    padding-bottom: 70px;
+  }
+
+  .project-description {
+    font-size: 20px;
+
+    h1 {
+      margin-bottom: 50px;
+    }
+
+    .description-section {
+      margin-top: 50px;
+
+    }
+  }
+}
+
+.project-panel-3 {
+  padding-top: 60px;
+  padding-bottom: 120px;
+
+  @media screen and (max-width: 991px) {
+    padding-top: 55px;
+    padding-bottom: 90px;
+  }
+  @media screen and (max-width: 767px) {
+    padding-bottom: 70px;
+  }
+
+  .project-skills-gained {
+    h1 {
+      margin-bottom: 35px;
+    }
+    .badge-container {
+      display: inline-flex;
+      flex-direction: row;
+      flex-wrap: wrap;
+      justify-content: center;
+
+
+      .project-skill-badge {
+        display: inline-block;
+        margin-left: 10px;
+        margin-right: 10px;
+        margin-top: 25px;
+
+        .square-badge {
+          width: 150px;
+        }
+
+        .hex-badge {
+          width: 180px;
+        }
+
+        #git-badge {
+          height: 152px;
+          width: auto;
+        }
+
+        #git-badge + footer {
+          margin-top: 10px;
+        }
+
+        #ui-design-badge {
+          margin-top: 2px;
+        }
+
+        #ui-design-badge + footer {
+          margin-top: 13px;
+        }
+
+        #backend-dev-badge + footer {
+          margin-top: 15px;
+        }
+
+        footer {
+          font-size: 18px;
+          margin-top: 8px;
+        }
+      }
+    }
+  }
+}

@@ -1,0 +1,334 @@
+.about-panel-1 {
+  padding-top: 140px;
+  box-shadow: 0px 7px 10px rgba(0,0,0,0.4);
+
+  @media (max-width: 991px) {
+    padding-top: 130px;
+  }
+
+  .about-portrait {
+    width: 570px;
+    margin-left: -16%;
+    @media screen and (min-width: 1400px) {
+      width: 600px;
+    }
+    @media screen and (max-width: 1199px) {
+      width: 530px;
+    }
+    @media (max-width: 991px) {
+      width: 490px;
+      margin-left: -20%;
+    }
+    @media (max-width: 767px) {
+      display: none;
+    }
+  }
+  .about-portrait-mobile {
+    display: none;
+    @media (max-width: 767px) {
+      display: block;
+      width: 400px;
+      margin: 20px auto;
+    }
+    @media (max-width: 460px) {
+      width: 320px;
+    }
+  }
+
+  .intro-section {
+    padding-left: 80px;
+    padding-right: 80px;
+    padding-top: 20px;
+    font-size: 20px;
+
+    @media screen and (max-width: 1199px) {
+      padding-left: 50px;
+      padding-right: 50px;
+    }
+    @media (max-width: 991px) {
+      padding-left: 26px;
+      padding-right: 40px;
+      font-size: 18px;
+    }
+    @media (max-width: 767px) {
+      padding-top: 60px;
+    }
+    @media (max-width: 460px) {
+      padding-left: 65px;
+    }
+
+    h1 {
+      margin-bottom: 30px;
+      font-size: 60px;
+      @media (max-width: 991px) {
+        font-size: 52px;
+      }
+    }
+    #about-hashtag {
+      font-size: 32px;
+      margin-top: 24px;
+      color: lightseagreen;
+      @media (max-width: 991px) {
+        font-size: 28px;
+      }
+      @media (max-width: 767px) {
+        margin-bottom: 80px;
+      }
+    }
+  }
+}
+
+.about-panel-2 {
+  background-color: #f4f4f4;
+  padding-top: 60px;
+  padding-bottom: 80px;
+  h2 {
+    font-size: 50px;
+    margin-bottom: 60px;
+  }
+  img {
+    display: none;
+    margin: 0 auto;
+  }
+  #lg-collage-img {
+    @media screen and (min-width: 1200px)  {
+      display: block;
+    }
+  }
+  #md-collage-img {
+    @media screen and (max-width: 1199px) and (min-width: 992px) {
+      display: block;
+      width: 100%;
+    }
+  }
+  #sm-collage-img {
+    @media (max-width: 991px) and (min-width: 768px) {
+      display: block;
+      width: 100%;
+    }
+  }
+  #xs-collage-img {
+    @media (max-width: 767px) {
+      display: block;
+      width: 84%;
+    }
+  }
+}
+
+.about-panel-3 {
+  padding-top: 60px;
+  padding-bottom: 80px;
+
+  .about-skill-badge {
+    display: inline-block;
+    margin-left: 10px;
+    margin-right: 10px;
+    margin-top: 20px;
+    footer {
+      font-size: 18px;
+      margin-top: 8px;
+      @media screen and (max-width: 1199px) and (min-width: 992px) {
+        width: 115px;
+      }
+    }
+
+    .square-badge {
+      width: 150px;
+      @media screen and (max-width: 1199px) and (min-width: 992px) {
+        width: 115px;
+      }
+    }
+    .hex-badge {
+      width: 180px;
+      @media screen and (max-width: 1199px) and (min-width: 992px) {
+        width: 135px;
+      }
+    }
+    .hex-badge + footer {
+      @media screen and (max-width: 1199px) and (min-width: 992px) {
+        margin-left: 10px;
+      }
+    }
+
+    #git-badge-graphic {
+      height: 152px;
+      width: auto;
+      @media screen and (max-width: 1199px) and (min-width: 992px) {
+        height: 115px;
+      }
+      @media (max-width: 991px) {
+        margin-bottom: 10px;
+      }
+      @media (max-width: 991px) and (min-width: 768px) {
+        margin-left: 20px;
+      }
+    }
+
+    #backend-dev-badge-graphic {
+      margin-bottom: 5px;
+    }
+
+    #ui-design-badge-graphic {
+      margin-bottom: 5px;
+      @media screen and (max-width: 1199px) and (min-width: 992px) {
+        width: 114px;
+        margin-bottom: 2px;
+      }
+      @media (max-width: 991px) and (min-width: 768px) {
+        margin-left: 16px;
+      }
+    }
+
+    #android-badge-graphic {
+      margin-bottom: 5px;
+    }
+  }
+
+  .skill-section-non-mobile {
+    @media (max-width: 991px) {
+      display: none;
+    }
+    .skill-set-section {
+      display: flex;
+      flex-direction: row;
+      flex-wrap: wrap;
+      justify-content: center;
+      padding-left: 10px;
+      padding-right: 10px;
+    }
+
+  }
+  .skill-section-mobile {
+    display: none;
+    @media (max-width: 991px) {
+      display: block;
+      margin-top: 30px;
+    }
+    img {
+      @media (max-width: 767px) {
+        margin: 0 auto;
+      }
+    }
+  }
+
+  #skill-description-container {
+    background-color: rgba(255,184,77,0.7);
+    margin-top: 20px;
+    margin-left: 8%;
+    width: 80%;
+    height: 350px;
+    border-radius: 8px;
+    padding-left: 8%;
+    padding-right: 8%;
+    padding-top: 4%;
+
+    @media screen and (min-width: 1200px)  {
+      height: 490px;
+    }
+    @media (max-width: 991px) {
+      margin: 0 auto;
+      width: 70%;
+    }
+    @media (max-width: 460px) {
+      width: 94%;
+    }
+
+    #skill-title {
+      font-size: 28px;
+    }
+    .skill-description-text {
+      font-size: 16px;
+    }
+    .active {
+      display: block;
+    }
+    .inactive {
+      display: none;
+    }
+    #related-projects {
+      font-size: 20px;
+      margin-top: 30px;
+    }
+    #related-projects-list {
+      margin-left: -22px;
+      li {
+        font-size: 16px;
+      }
+    }
+  }
+
+  h2 {
+    font-size: 50px;
+    margin-bottom: 40px;
+  }
+}
+
+.about-panel-4 {
+  background-color: #f4f4f4;
+  padding-top: 70px;
+  padding-bottom: 100px;
+
+  .random-facts-images {
+    padding-left: 7%;
+    padding-top: 22px;
+
+    @media screen and (max-width: 1199px) {
+      padding-left: 20px;
+    }
+    @media (max-width: 991px) {
+      padding-top: 24px;
+    }
+    .random-img-container {
+      @media (max-width: 767px) {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+      }
+      img {
+        width: 200px;
+        height: 200px;
+        margin-left: 2px;
+        margin-right: 2px;
+        margin-top: 3px;
+        margin-bottom: 3px;
+
+        @media (max-width: 991px) {
+          width: 150px;
+          height: 150px;
+        }
+      }
+    }
+  }
+
+  .random-facts-section {
+    @media screen and (min-width: 1200px)  {
+      padding-right: 6%;
+      padding-left: 6%;
+    }
+    @media (max-width: 767px) {
+      padding-top: 60px;
+      padding-left: 5%;
+    }
+    h2 {
+      font-size: 50px;
+      margin-bottom: 20px;
+      @media (max-width: 991px) {
+        font-size: 38px;
+      }
+    }
+    ul{
+      margin-left: -18px;
+    }
+    li {
+      margin-bottom: 15px;
+      font-size: 18px;
+      @media (max-width: 991px) {
+        font-size: 16px;
+      }
+    }
+    img {
+      height: 14px;
+      margin-bottom: 2px;
+    }
+  }
+}
