@@ -1,32 +1,8 @@
-$( document ).ready(function() {
-    /* need to make this non conditional to size */
-    if ($( window ).width() > 991) {
-        $(".about-skill-badge").mouseover(nonMobileSkillhandler);
-    } else {
-        var numSlides;
-        if ($( window ).width() < 768) {
-            numSlides = 1;
-        } else {
-            numSlides = 3;
-            $(".about-skill-badge").click(nonMobileSkillhandler);
-        }
-        $('.skill-section-mobile-carousel').slick({
-            infinite: true,
-            slidesToShow: numSlides,
-            slidesToScroll: numSlides
-        });
-
-        $("button.slick-arrow.slick-next").on( "click", mobileSkillHandler);
-        $("button.slick-arrow.slick-prev").on( "click", mobileSkillHandler);
-    }
-});
-
-
 var frontEndDevTitle = "Front End Development";
 var frontEndDevDescription = "frontend-skill-description-text";
 var listProjects = [["blog-board", "Blog Board"], ["personal-website", "Personal Website"],
     ["brewmeister", "Brewmeister"], ["falling-myo", "Falling Myo"], ["tether-car", "Electromagnetic Tether Car"],
-    ["telephone-app", "Telephone App"]];
+    ["telephone-app", "Telephone App"], ["space-invaders", "Space Invaders"]];
 
 var databaseTitle = "Database Design";
 var databaseDescription = "databases-skill-description";
@@ -46,9 +22,41 @@ var androidDescription = "android-skill-description";
 var embeddedTitle = "Embedded Development";
 var embeddedDescription = "embedded-skill-description";
 
+
+$( document ).ready(function() {
+    /* need to make this non conditional to size */
+    $("#related-projects-list").append("<li><a href='/" + listProjects[0][0] + "'>" + listProjects[0][1] + "</a></li>");
+    $("#related-projects-list").append("<li><a href='/" + listProjects[1][0] + "'>" + listProjects[1][1] + "</a></li>");
+    $("#related-projects-list").append("<li><a href='/" + listProjects[2][0] + "'>" + listProjects[2][1] + "</a></li>");
+    $("#related-projects-list").append("<li><a href='/" + listProjects[6][0] + "'>" + listProjects[6][1] + "</a></li>");
+
+    if ($( window ).width() > 991) {
+        $(".about-skill-badge").click(nonMobileSkillhandler);
+    } else {
+        var numSlides;
+        if ($( window ).width() < 768) {
+            numSlides = 1;
+        } else {
+            numSlides = 3;
+            $(".about-skill-badge").click(nonMobileSkillhandler);
+        }
+        $('.skill-section-mobile-carousel').slick({
+            infinite: true,
+            slidesToShow: numSlides,
+            slidesToScroll: numSlides,
+            prevArrow:"<img class='a-left control-c prev slick-prev' src='/assets/img/icons/paging-prev-arrow.png'>",
+            nextArrow:"<img class='a-right control-c next slick-next' src='/assets/img/icons/paging-next-arrow.png'>"
+        });
+
+        $("img.slick-arrow.slick-next").on( "click", mobileSkillHandler);
+        $("img.slick-arrow.slick-prev").on( "click", mobileSkillHandler);
+    }
+});
+
+
 function displayBadgeInfo(title, descriptionId, listrelatedProjects) {
     $("#skill-title").html(title);
-    var currentVisibleDescription = document.getElementsByClassName("active");
+    var currentVisibleDescription = document.getElementsByClassName("active skill-description-text");
     currentVisibleDescription[0].className = currentVisibleDescription[0]
         .className.replace(/(?:^|\s)active(?!\S)/g, " inactive");
 
@@ -101,7 +109,7 @@ function matchBadgeLogic(targetElementId) {
             relatedProjects.push(listProjects[0]);
             relatedProjects.push(listProjects[1]);
             relatedProjects.push(listProjects[2]);
-            relatedProjects.push(listProjects[3]);
+            relatedProjects.push(listProjects[6]);
             displayBadgeInfo(frontEndDevTitle, frontEndDevDescription, relatedProjects);
             break;
     }
@@ -114,11 +122,6 @@ function nonMobileSkillhandler(ev) {
 
 
 function mobileSkillHandler() {
-    /*$(".about-skill-badge").each(function(item) {
-       if($(item).hasClass("slick-active")) {
-            matchBadgeLogic(item.attr("id"));
-       }
-    });*/
     var currentActivePanelId = $(".slick-current").attr('id');
     matchBadgeLogic(currentActivePanelId);
 }

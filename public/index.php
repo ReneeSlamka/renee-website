@@ -60,6 +60,10 @@ $app->get('/space-invaders', function () use ($app) {
     $app->render('/pages/space-invaders.twig');
 });
 
+$app->get('/wireless-audio-streaming', function () use ($app) {
+    $app->render('/pages/wireless-audio-streaming.twig');
+});
+
 $app->get('/blog-board', function () use ($app) {
     $app->render('/pages/blog-board.twig');
 });

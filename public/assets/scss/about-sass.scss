@@ -1,6 +1,12 @@
+@import "variables";
+
 .about-panel-1 {
   padding-top: 140px;
   box-shadow: 0px 7px 10px rgba(0,0,0,0.4);
+
+  a {
+    color:  $gray-blue;
+  }
 
   @media (max-width: 991px) {
     padding-top: 130px;
@@ -80,37 +86,70 @@
 
 .about-panel-2 {
   background-color: #f4f4f4;
-  padding-top: 60px;
-  padding-bottom: 80px;
-  h2 {
-    font-size: 50px;
-    margin-bottom: 60px;
+  padding-top: 70px;
+  padding-bottom: 100px;
+
+  .random-facts-images {
+    padding-left: 7%;
+    padding-top: 22px;
+
+    @media screen and (max-width: 1199px) {
+      padding-left: 20px;
+    }
+    @media (max-width: 991px) {
+      padding-top: 24px;
+    }
+    .random-img-container {
+      @media (max-width: 767px) {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+      }
+      img {
+        width: 200px;
+        height: 200px;
+        margin-left: 2px;
+        margin-right: 2px;
+        margin-top: 3px;
+        margin-bottom: 3px;
+
+        @media (max-width: 991px) {
+          width: 150px;
+          height: 150px;
+        }
+      }
+    }
   }
-  img {
-    display: none;
-    margin: 0 auto;
-  }
-  #lg-collage-img {
+
+  .random-facts-section {
     @media screen and (min-width: 1200px)  {
-      display: block;
+      padding-right: 6%;
+      padding-left: 6%;
     }
-  }
-  #md-collage-img {
-    @media screen and (max-width: 1199px) and (min-width: 992px) {
-      display: block;
-      width: 100%;
-    }
-  }
-  #sm-collage-img {
-    @media (max-width: 991px) and (min-width: 768px) {
-      display: block;
-      width: 100%;
-    }
-  }
-  #xs-collage-img {
     @media (max-width: 767px) {
-      display: block;
-      width: 84%;
+      padding-top: 60px;
+      padding-left: 5%;
+    }
+    h2 {
+      font-size: 50px;
+      margin-bottom: 20px;
+      @media (max-width: 991px) {
+        font-size: 38px;
+      }
+    }
+    ul{
+      margin-left: -18px;
+    }
+    li {
+      margin-bottom: 15px;
+      font-size: 18px;
+      @media (max-width: 991px) {
+        font-size: 16px;
+      }
+    }
+    img {
+      height: 14px;
+      margin-bottom: 2px;
     }
   }
 }
@@ -124,6 +163,11 @@
     margin-left: 10px;
     margin-right: 10px;
     margin-top: 20px;
+
+    @media (max-width: 991px) {
+      margin-left: 9px;
+    }
+
     footer {
       font-size: 18px;
       margin-top: 8px;
@@ -225,10 +269,20 @@
     @media screen and (min-width: 1200px)  {
       height: 490px;
     }
+    @media screen and (max-width: 1199px)  {
+      margin-left: 0%;
+      width: 95%;
+      height: 440px;
+    }
     @media (max-width: 991px) {
       margin: 0 auto;
-      width: 70%;
+      width: 85%;
+      height: 400px;
     }
+    @media screen and (max-width: 518px)  {
+      height: 425px;
+    }
+
     @media (max-width: 460px) {
       width: 94%;
     }
@@ -263,72 +317,40 @@
   }
 }
 
+
 .about-panel-4 {
   background-color: #f4f4f4;
-  padding-top: 70px;
-  padding-bottom: 100px;
-
-  .random-facts-images {
-    padding-left: 7%;
-    padding-top: 22px;
-
-    @media screen and (max-width: 1199px) {
-      padding-left: 20px;
-    }
-    @media (max-width: 991px) {
-      padding-top: 24px;
-    }
-    .random-img-container {
-      @media (max-width: 767px) {
-        display: flex;
-        flex-wrap: wrap;
-        justify-content: center;
-      }
-      img {
-        width: 200px;
-        height: 200px;
-        margin-left: 2px;
-        margin-right: 2px;
-        margin-top: 3px;
-        margin-bottom: 3px;
-
-        @media (max-width: 991px) {
-          width: 150px;
-          height: 150px;
-        }
-      }
+  padding-top: 60px;
+  padding-bottom: 80px;
+  h2 {
+    font-size: 50px;
+    margin-bottom: 60px;
+  }
+  img {
+    display: none;
+    margin: 0 auto;
+  }
+  #lg-collage-img {
+    @media screen and (min-width: 1200px)  {
+      display: block;
     }
   }
-
-  .random-facts-section {
-    @media screen and (min-width: 1200px)  {
-      padding-right: 6%;
-      padding-left: 6%;
+  #md-collage-img {
+    @media screen and (max-width: 1199px) and (min-width: 992px) {
+      display: block;
+      width: 100%;
     }
+  }
+  #sm-collage-img {
+    @media (max-width: 991px) and (min-width: 768px) {
+      display: block;
+      width: 100%;
+    }
+  }
+  #xs-collage-img {
     @media (max-width: 767px) {
-      padding-top: 60px;
-      padding-left: 5%;
-    }
-    h2 {
-      font-size: 50px;
-      margin-bottom: 20px;
-      @media (max-width: 991px) {
-        font-size: 38px;
-      }
-    }
-    ul{
-      margin-left: -18px;
-    }
-    li {
-      margin-bottom: 15px;
-      font-size: 18px;
-      @media (max-width: 991px) {
-        font-size: 16px;
-      }
-    }
-    img {
-      height: 14px;
-      margin-bottom: 2px;
+      display: block;
+      width: 84%;
     }
   }
 }

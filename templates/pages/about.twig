@@ -3,7 +3,7 @@
 {% block title %}Ren&eacutee Slamka | About{% endblock %}
 
 {% block css %}
-    <link rel="stylesheet" href="/assets/css/about.css" />
+    <link rel="stylesheet" href="/assets/css/about-sass.css" />
 {% endblock %}
 
 {% block js %}
@@ -22,18 +22,18 @@
     <div class="about-panel-1">
         <div class="container">
             <div class="row">
-                <div class="col-xs-12 col-sm-6 col-sm-push-6">
+                <div class="col-xs-12 col-md-6 push-md-6">
                     <img class="about-portrait" src="/assets/img/profile-pics/about-portrait.png">
                     <img class="about-portrait-mobile" src="/assets/img/profile-pics/about-portrait-cropped.png">
                 </div>
-                <div class="col-xs-10 col-xs-offset-1 col-sm-6 col-sm-offset-0 col-sm-pull-6 intro-section">
+                <div class="col-xs-10 col-xs-offset-1 col-md-6 offset-md-0 pull-md-6 intro-section">
                     <h1>About Me</h1>
                     <p>Before you ask, no, I'm not French.</p>
                     <p>
                         I'm a longtime Vancouverite, and currently in the final year of my
                         Bachelor of Applied Science degree in Software Engineering at the
                         University of British Columbia. I have yet to jump on the yoga bandwagon,
-                        but I must admit I love this city (and its abundance of cheap sushi).
+                        but I will say that I love this city (and its abundance of cheap sushi).
                     </p>
                     <p id="about-hashtag">#westcoastbestcoast</p>
                 </div>
@@ -41,10 +41,10 @@
         </div>
     </div>
 
-    <div class="about-panel-4">
+    <div class="about-panel-2">
         <div class="container">
             <div class="row">
-                <div class="col-xs-12 col-sm-6 col-sm-offset-0 random-facts-images">
+                <div class="col-12 col-md-6 offset-md-0 random-facts-images">
                     <div class="random-img-container">
                         <a href="/assets/img/profile-pics/float-plane-ride.jpg" data-toggle="lightbox" data-gallery="greenhouse"
                            data-title="When you find out the plane you're flying in is over double your age">
@@ -64,7 +64,7 @@
                         </a>
                     </div>
                 </div>
-                <div class="col-xs-10 col-xs-offset-1 col-sm-6 col-sm-offset-0 random-facts-section">
+                <div class="col-10 offset-1 col-md-6 offset-md-0 random-facts-section">
                     <h2>True Story</h2>
                     <ul>
                         <li>I <img src="/assets/img/icons/heart.png"> Star Wars</li>
@@ -85,9 +85,9 @@
 
     <div class="about-panel-3">
         <div class="container">
+            <h2 class="text-center">Skill Set</h2>
             <div class="row">
-                <h2 class="text-center">Skill Set</h2>
-                <div class="col-md-7 skill-section-non-mobile">
+                <div class="col-lg-7 skill-section-non-mobile">
                     <div class="skill-set-section">
                         <div class="about-skill-badge" id="front-end-dev-badge">
                             <img class="square-badge" src="/assets/img/icons/web-dev-badge.png">
@@ -119,55 +119,51 @@
                         </div>
                     </div>
                 </div>
-                <div class="col-md-5">
+                <div class="col-lg-5 offset-lg-0 col-md-10 offset-md-1">
                     <div id="skill-description-container">
                         <h4 id="skill-title">Front End Development</h4>
                         <p id="frontend-skill-description-text" class="skill-description-text active">
-                            In the past year and half, I have spent much of my time working on front end
-                            projects, both for co-op and school. While I was interning at the Dun and Bradstreet Cloud
-                            Innovation Center, I got the chance to work with ReactJS to create data visualization
-                            components. For my next work term at Dynamic Leap, I was tasked with rebuilding the
-                            company's website using PHP, Twig and Boostrap. I liked it so much I decided to build my
-                            own website.
+                            I first started learning about web development when I decided to build this website.
+                            Since then, it's been a large part of both my school and co-op projects. As an artsy
+                            person who loves design, I like front end work because I get to see my ideas realized
+                            in a visual form (the print statements from my other types of projects just don't cut it).
                         </p>
                         <p id="databases-skill-description" class="skill-description-text inactive">
-                            I recently completed a course in relational databases, where we learned how to design
-                            databases to model real life scenarios. We covered everything from creating Entity-Relationship
-                            diagrams to translating those same diagrams into a working database. We also learned SQL, and
-                            had to complete a project that incorporated certain complex queries.
+                            In my third year I completed a course in relational databases, where we learned how to design
+                            databases to model common use cases. We covered everything from creating Entity-Relationship
+                            diagrams to translating those same diagrams into a working database. Last term I also took a
+                            course on building modern web apps, which covered the use of NoSQL databases like MongoDB.
                         </p>
                         <p id="git-skill-description" class="skill-description-text inactive">
-                            I've been working with Git for several years, both at school and while on co-op. It wasn't
-                            easy to get used to at first, but now I can't imagine life without source control. I use
-                            a combo of the terminal and SourceTree to handled my "git needs", as I prefer using a
-                            GUI for some tasks.
+                            Version control is life. I once worked on a group project for school where one of the team
+                            members insisted on using Facebook to send code because he couldn't get Git working on his
+                            laptop. NEVER AGAIN.
                         </p>
                         <p id="backend-skill-description" class="skill-description-text inactive">
-                            During my last co-op term, I worked on a Spring Boot practice project in order to become
-                            more familiar with the framework. The majority of the project focused on back end development,
-                            and I implemented features such as account creation, session management, and sharing text content
-                            between users. I completed a similar type of project for a recent course on databases, and
-                            was responsible for implementing account creation and login functionality on the backend.
+                            If I had to choose between front end and back end development, I'd probably choose the
+                            latter as I really enjoy tackling challenges that focus on higher level design and have
+                            many moving parts. I'm currently taking a course on distributed systems, and it has definitely
+                            convinced me to pursue a career in the server side development.
                         </p>
                         <p id="ui-skill-description" class="skill-description-text inactive">
-                            During one of my upper level software engineering courses, we covered the
-                            basic elements of good UI design and had to give a presentation discussing these
-                            design strategies. Since then I have had several opportunities to practice what I learned
-                            in the form of school projects and personal projects, this website being one of them. I
-                            always aim to abide by the "KISS" principle, "Keep It Simple, Stupid".
+                            I am currently taking a course in designing user interfaces, which covers the methods
+                            used at the design, prototyping, and evaluation stages of the work process. In one of
+                            my software engineering classes we also covered the basic elements of good UI design - one
+                            that I'll never forget was KISS (keep it simple, stupid).
                         </p>
                         <p id="android-skill-description" class="skill-description-text inactive">
-
+                            During a third year project course, we learned the basics of Android development, and then
+                            had to create an app that used our DE2 boards to exchange data/messages. Following that,
+                            I competed in a hackathon and helped build an Android app that used a Myo armband to detect
+                            if the user had fallen.
                         </p>
                         <p id="embedded-skill-description" class="skill-description-text inactive">
                             During the second year of my program, there was a heavy focus on embedded systems and
-                            firmware development. The majority of our labs comprised of designing state machines and
-                            implementing them using VHDL or Assembly on our DE2 logic boards. We also two term projects
-                            that involved developing our own hardware and programming it; the first was a reflow oven
+                            firmware development. The majority of our labs involved designing state machines and
+                            implementing them using VHDL or Assembly on our DE2 logic boards. We also had two term projects
+                            that also required us to develop our own hardware; the first was a reflow oven
                             controller, and the second was a miniature motorized car that was controlled by the strength
-                            of an electromagentic signal from a remote.<br>
-                            This past summer I spent some time working with the Beagle Bone Black to assess its chip's
-                            suitability for a wireless streaming project.
+                            of an electromagentic signal from a remote.
                         </p>
                         <h6 id="related-projects">Related Projects</h6>
                         <ul id="related-projects-list">
@@ -176,7 +172,7 @@
                 </div>
             </div>
             <div class="row skill-section-mobile">
-                <div class="col-xs-10 col-xs-offset-1 col-sm-10 col-sm-offset-1">
+                <div class="col-8 offset-2 col-sm-8 offset-sm-2 col-md-10 offset-md-1">
                     <div class="skill-section-mobile-carousel">
                         <div class="about-skill-badge" id="front-end-dev-badge">
                             <img class="square-badge" src="/assets/img/icons/web-dev-badge.png">
@@ -212,7 +208,7 @@
         </div>
     </div>
 
-    <div class="about-panel-2">
+    <div class="about-panel-4">
         <div class="container">
             <h2 class="text-center">My Life in 40 Words or Less</h2>
             <img id="lg-collage-img" src="/assets/img/lg-word-collage.png">
