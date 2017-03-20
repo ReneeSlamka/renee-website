@@ -1,0 +1,143 @@
+.contact-panel-1 {
+  background-image: url("/assets/img/english-bay-beach.jpg");
+  background-position: 120% 0%;
+  background-repeat: no-repeat;
+  height: 100vh;
+  background-size: cover;
+
+  @media screen and (max-width:1839px) {
+    background-position: 100% 0%;
+    background-repeat: no-repeat;
+  }
+
+  @media screen and (max-width:1799px) {
+    background-position: 70% 0%;
+    background-repeat: no-repeat;
+  }
+
+  @media screen and (max-width:1699px) {
+    background-position: 55% 0%;
+    background-repeat: no-repeat;
+  }
+
+  @media screen and (max-width:1349px) {
+    background-position: 43% 0%;
+    background-repeat: no-repeat;
+  }
+
+  @media (max-width:767px) {
+    height: auto;
+  }
+
+  .contact-bg-white-overlay {
+    background-color: rgba(255,255,255,0.75);
+    padding-top: 145px;
+    height: 100%;
+
+    @media (max-width:767px) {
+      background-color: rgba(255,255,255,0.82);
+      padding-bottom: 70px;
+    }
+
+    .contact-info-section {
+      padding-left: 25px;
+      padding-right: 40px;
+      font-size: 18px;
+
+      @media screen and (max-width:1199px) {
+        padding-left: 15px;
+        padding-right: 40px;
+        font-size: 18px;
+      }
+
+      @media (max-width:991px) {
+        padding-left: 15px;
+        padding-right: 40px;
+        font-size: 18px;
+      }
+
+      @media (max-width:859px) {
+        padding-left: 20px;
+        padding-right: 5px;
+        font-size: 18px;
+      }
+
+      @media (max-width:767px) {
+        padding-left: 0px;
+      }
+
+      h1 {
+        font-size: 40px;
+      }
+
+      h1 + p {
+        margin-top: 40px;
+      }
+
+      ul {
+        list-style-type: none;
+        margin-top: 35px;
+        margin-left: -45px;
+      }
+
+      li {
+        margin-bottom: 15px;
+      }
+
+      img {
+        height: 44px;
+        margin-right: 10px;
+      }
+
+      #contact-info-sidenote {
+        font-size: 16px;
+        margin-top: 30px;
+      }
+    }
+
+    .contact-form-section {
+      padding-top: 53px;
+
+      @media (max-width:991px) {
+        padding-left: 35px;
+      }
+
+      @media (max-width:859px) {
+        padding-left: 35px;
+      }
+
+      @media (max-width:767px) {
+        padding-left: 0px;
+        padding-top: 50px;
+      }
+
+      #contact-form {
+        input {
+          margin-bottom: 20px;
+        }
+
+        label {
+          font-size: 18px;
+        }
+
+        input, textarea {
+          background-color: rgba(255,255,255,0.5);
+          border-width: 1px;
+          border-style: solid;
+          border-color: #cccccc;
+          border-radius: 3px;
+          font-size: 16px;
+          padding-left: 8px;
+          font-family: "PT Sans Narrow", sans-serif;
+        }
+
+        #send-button {
+          display: block;
+          padding-left: 25px;
+          padding-right: 25px;
+          margin-top: 10px;
+        }
+      }
+    }
+  }
+}
